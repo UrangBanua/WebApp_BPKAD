@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/06/16 16:59:22.000.234,D:\[PROJECTS]\DELPHI\WebApp_Desktop\SimpleDemo.dproj=D:\[PROJECTS]\DELPHI\WebApp_Desktop\WebApp_Desktop.dproj</Transaction>
+    <Transaction>2021/06/25 09:52:32.000.852,D:\[PROJECTS]\DELPHI\WebApp_Desktop\WebApp_BPKAD.dproj=D:\[PROJECTS]\DELPHI\WebApp_Desktop\WebApp_Desktop.dproj</Transaction>
+    <Transaction>2021/06/28 11:32:35.000.114,=D:\OneDrive\PROJECTS\BPKAD HST\WebApp_BPKAD\Unit1.pas</Transaction>
+    <Transaction>2021/06/28 11:33:16.000.120,D:\OneDrive\PROJECTS\BPKAD HST\WebApp_BPKAD\Unit1.pas=D:\OneDrive\PROJECTS\BPKAD HST\WebApp_BPKAD\OpenUrl.pas</Transaction>
+    <Transaction>2021/06/28 11:33:16.000.120,D:\OneDrive\PROJECTS\BPKAD HST\WebApp_BPKAD\Unit1.dfm=D:\OneDrive\PROJECTS\BPKAD HST\WebApp_BPKAD\OpenUrl.dfm</Transaction>
+    <Transaction>2021/06/29 11:02:54.000.115,D:\OneDrive\PROJECTS\BPKAD HST\WebApp_BPKAD\Kepegawaian.pas=D:\OneDrive\PROJECTS\BPKAD HST\WebApp_BPKAD\OpenUrl.pas</Transaction>
+    <Transaction>2021/06/29 11:02:54.000.115,D:\OneDrive\PROJECTS\BPKAD HST\WebApp_BPKAD\Kepegawaian.dfm=D:\OneDrive\PROJECTS\BPKAD HST\WebApp_BPKAD\OpenUrl.dfm</Transaction>
+    <Transaction>2021/06/30 21:52:35.000.776,=D:\OneDrive\PROJECTS\BPKAD HST\WebApp_BPKAD\ModelSupport_WebApp_BPKAD\default.txaPackage</Transaction>
+    <Transaction>2021/06/30 21:52:39.000.148,=D:\OneDrive\PROJECTS\BPKAD HST\WebApp_BPKAD\ModelSupport_WebApp_BPKAD\default.txvpck</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="ModelSupport_WebApp_BPKAD"/>
+    <File Path="ModelSupport_WebApp_BPKAD\default.txaPackage"/>
+    <File Path="ModelSupport_WebApp_BPKAD\default.txvpck"/>
+    <File Path="Customers.pas"/>
+    <File Path="Customers.dfm"/>
+    <File Path="Invoices.pas"/>
+    <File Path="Invoices.dfm"/>
+    <File Path="Kepegawaian.pas"/>
+    <File Path="Kepegawaian.dfm"/>
+    <File Path="LoginForm.pas"/>
+    <File Path="LoginForm.dfm"/>
+    <File Path="Main.pas"/>
+    <File Path="Main.dfm"/>
+    <File Path="MainModule.pas"/>
+    <File Path="MainModule.dfm"/>
+    <File Path="NewInvioce.pas"/>
+    <File Path="NewInvioce.dfm"/>
+    <File Path="ServerModule.pas"/>
+    <File Path="ServerModule.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>
