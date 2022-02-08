@@ -1,9 +1,0 @@
-WebApp_BPKAD.exe: 00001998: 16:32:48 [127.0.0.1]:Failed Sequence Recovery: SeqId: 28, Event: move
-WebApp_BPKAD.exe: 00001998: 16:32:48 [127.0.0.1]:Sequence sent from cache:  SeqId: 28
-WebApp_BPKAD.exe: 00001998: 16:32:48 [127.0.0.1]:Processed: Id: 28, Evt: move, [APsAiJsWiN109603B12]
-WebApp_BPKAD.exe: 00001998: 16:32:48 [127.0.0.1]:Failed Sequence Recovery: SeqId: 29, Event: activate
-WebApp_BPKAD.exe: 00001998: 16:32:48 [127.0.0.1]:Sequence sent from cache:  SeqId: 29
-WebApp_BPKAD.exe: 00001998: 16:32:48 [127.0.0.1]:Processed: Id: 29, Evt: activate, [APsAiJsWiN109603B12]
-WebApp_BPKAD.exe: 00001998: 16:32:48 [127.0.0.1]:Failed Sequence Recovery: SeqId: 30, Event: resize
-WebApp_BPKAD.exe: 00001998: 16:32:48 [127.0.0.1]:Sequence sent from cache:  SeqId: 30
-WebApp_BPKAD.exe: 00001998: 16:32:48 [127.0.0.1]:Processed: Id: 30, Evt: resize, [APsAiJsWiN109603B12]
