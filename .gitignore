@@ -32,6 +32,7 @@ certificate_server/
 *.key
 
 # custom project
+ModelSupport_WebApp_BPKAD/
 *.ini
 *.config
 
