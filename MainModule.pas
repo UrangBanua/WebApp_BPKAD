@@ -166,9 +166,6 @@ begin
   DriverID := 'MSSQL';
   Server := 'localhost';
   OSAuthent := 'No';
-  UserName := 'bpkad_hst';
-  Password := 'bpkad_Ak';
-  Database := 'webapp_bpkad';
   MARS := 'yes';
   Workstation := 'server_bpkad';
   ApplicationName := 'webapp_bpkad';
