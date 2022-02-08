@@ -1,9 +1,0 @@
-WebApp_BPKAD.exe: 000018B8: 09:34:45 []:>--------------------------------------------------------------<
-WebApp_BPKAD.exe: 000018B8: 09:34:45 [TUniServerModule]:Server First Init.
-WebApp_BPKAD.exe: 000018B8: 09:34:45 [TUniServerModule]:Starting HTTP Server on Port: 85...
-WebApp_BPKAD.exe: 000018B8: 09:34:46 [TUniServerModule]:HTTP Server Started on Port: 85
-WebApp_BPKAD.exe: 00003438: 09:45:11 []:EAccessViolation : Access violation at address 00409A48 in module 'WebApp_BPKAD.exe'. Read of address FFFFFFFD : Addr: $00409A48
-WebApp_BPKAD.exe: 00002A90: 09:54:11 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: s2f8U58IXn10968F1F2 ) : Addr: $00794B4E
-WebApp_BPKAD.exe: 00002A90: 09:54:12 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: s2f8U58IXn10968F1F2 ) : Addr: $00794B4E
-WebApp_BPKAD.exe: 00003438: 09:54:42 []:EInvalidPointer : Invalid pointer operation : Addr: $00409955
-WebApp_BPKAD.exe: 000018B8: 09:54:54 [Exit]:Unexpected attempt to terminate server application with Exit Code: 0

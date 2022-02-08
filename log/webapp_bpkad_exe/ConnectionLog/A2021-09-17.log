@@ -1,9 +1,0 @@
-WebApp_BPKAD.exe: 00004A0C: 10:18:18 [127.0.0.1]:Failed Sequence Recovery: SeqId: 18, Event: click
-WebApp_BPKAD.exe: 00004A0C: 10:19:47 [127.0.0.1]:Sequence sent from cache:  SeqId: 18
-WebApp_BPKAD.exe: 00004A0C: 10:19:47 [127.0.0.1]:Processed: Id: 18, Evt: click, [tAka3NqZ88108FB2075]
-WebApp_BPKAD.exe: 000047D0: 10:21:09 [127.0.0.1]:Failed Sequence Recovery: SeqId: 32, Event: click
-WebApp_BPKAD.exe: 00004150: 10:21:44 [127.0.0.1]:Failed Sequence Recovery: SeqId: 32, Event: click
-WebApp_BPKAD.exe: 000047D0: 10:22:21 [127.0.0.1]:Sequence sent from cache:  SeqId: 32
-WebApp_BPKAD.exe: 000047D0: 10:22:21 [127.0.0.1]:Processed: Id: 32, Evt: click, [HDMrqxwWz8108FB20CA]
-WebApp_BPKAD.exe: 00004150: 10:22:21 [127.0.0.1]:Sequence sent from cache:  SeqId: 32
-WebApp_BPKAD.exe: 00004150: 10:22:21 [127.0.0.1]:Processed: Id: 32, Evt: click, [HDMrqxwWz8108FB20CA]
