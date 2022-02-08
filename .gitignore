@@ -33,6 +33,7 @@ certificate_server/*
 
 # custom project
 ModelSupport_WebApp_BPKAD/*
+files/dll/*
 *.ini
 *.config
 
