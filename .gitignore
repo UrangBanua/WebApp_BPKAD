@@ -26,13 +26,13 @@
 #*.obj
 
 # certificate
-certificate_server/
+certificate_server/*
 *.crt
 *.pem
 *.key
 
 # custom project
-ModelSupport_WebApp_BPKAD/
+ModelSupport_WebApp_BPKAD/*
 *.ini
 *.config
 
@@ -70,10 +70,10 @@ ModelSupport_WebApp_BPKAD/
 # Delphi history and backups
 __history/
 __recovery/
-temp/
-log/
-cache/
-backup/
+temp/*
+log/*
+cache/*
+backup/*
 *.~*
 
 # Castalia statistics file (since XE7 Castalia is distributed with Delphi)
