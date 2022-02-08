@@ -1,0 +1,19 @@
+WebApp_BPKAD.exe: 000040C4: 12:13:19 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 000040C4: 12:13:19 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 000040C4: 12:13:19 [TUniServerModule]:Global Cache Folder Erased. <38> Files deleted.
+WebApp_BPKAD.exe: 000040C4: 12:13:19 [TUniServerModule]:Starting HTTP Server on Port: 85...
+WebApp_BPKAD.exe: 000040C4: 12:13:19 [TUniServerModule]:HTTP Server Started on Port: 85
+WebApp_BPKAD.exe: 000033D4: 12:14:14 []:EAccessViolation : Access violation at address 00409A48 in module 'WebApp_BPKAD.exe'. Read of address FFFFFFFD : Addr: $00409A48
+WebApp_BPKAD.exe: 000033D4: 12:14:29 []:EAccessViolation : Access violation at address 0040FE41 in module 'WebApp_BPKAD.exe'. Read of address 00000004 : Addr: $0040FE41
+WebApp_BPKAD.exe: 000033D4: 12:14:29 [127.0.0.1]:Exception raised while destroying session: Access violation at address 0040FE41 in module 'WebApp_BPKAD.exe'. Read of address 00000004
+WebApp_BPKAD.exe: 000033D4: 12:14:29 [127.0.0.1]:EAccessViolation : Access violation at address 0040FE41 in module 'WebApp_BPKAD.exe'. Read of address 00000004 : Addr: $0040FE41
+WebApp_BPKAD.exe: 000033D4: 12:14:39 []:EInvalidPointer : Invalid pointer operation : Addr: $00409955
+WebApp_BPKAD.exe: 0000367C: 12:32:46 [Indy]:EIdHTTPErrorParsingCommand : Error in parsing command. : Addr: $0072158F
+WebApp_BPKAD.exe: 000033D4: 12:34:11 []:EInvalidPointer : Invalid pointer operation : Addr: $00409955
+WebApp_BPKAD.exe: 000033D4: 12:55:23 []:EInvalidPointer : Invalid pointer operation : Addr: $00409955
+WebApp_BPKAD.exe: 000033D4: 12:57:53 []:EInvalidPointer : Invalid pointer operation : Addr: $00409955
+WebApp_BPKAD.exe: 00002BB8: 16:08:26 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: njhXDXP2VA109B88195 ) : Addr: $00794C9A
+WebApp_BPKAD.exe: 00002BB8: 16:08:26 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: njhXDXP2VA109B88195 ) : Addr: $00794C9A
+WebApp_BPKAD.exe: 000033D4: 16:08:31 []:EInvalidPointer : Invalid pointer operation : Addr: $00409955
+WebApp_BPKAD.exe: 000033D4: 18:02:37 []:EInvalidPointer : Invalid pointer operation : Addr: $00409955
+WebApp_BPKAD.exe: 000040C4: 18:04:59 [Exit]:Unexpected attempt to terminate server application with Exit Code: 0

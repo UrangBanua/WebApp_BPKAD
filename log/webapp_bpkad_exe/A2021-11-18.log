@@ -1,0 +1,201 @@
+WebApp_BPKAD.exe: 000033CC: 09:16:35 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 000033CC: 09:16:35 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 000033CC: 09:16:35 [TUniServerModule]:Starting HTTP Server on Port: 85...
+WebApp_BPKAD.exe: 000033CC: 09:16:35 [TUniServerModule]:HTTP Server Started on Port: 85
+WebApp_BPKAD.exe: 00001784: 09:17:18 [127.0.0.1]:EMSSQLNativeException : [FireDAC][Phys][ODBC][Microsoft][SQL Server Native Client 11.0]Named Pipes Provider: Could not open a connection to SQL Server [1326].  : Addr: $0086E13A
+WebApp_BPKAD.exe: 00001368: 09:18:15 [127.0.0.1]:EDatabaseError : Field 'harga_satuan' must have a value : Addr: $00660F5F
+WebApp_BPKAD.exe: 00004310: 09:45:13 []:EAccessViolation : Access violation at address 00409A48 in module 'WebApp_BPKAD.exe'. Read of address FFFFFFFD : Addr: $00409A48
+WebApp_BPKAD.exe: 00001FD8: 09:47:40 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: VvvDQW1fc610959AAC8 ) : Addr: $00794B4E
+WebApp_BPKAD.exe: 00001FD8: 09:47:40 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: VvvDQW1fc610959AAC8 ) : Addr: $00794B4E
+WebApp_BPKAD.exe: 00004310: 09:57:44 []:EInvalidPointer : Invalid pointer operation : Addr: $00409955
+WebApp_BPKAD.exe: 000031B0: 10:05:19 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Invalid URI: /srs6/serv/urn:publicsanctservices ) : Addr: $00794B4E
+WebApp_BPKAD.exe: 000006FC: 11:01:40 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: dGu5KplNBP10959B32B ) : Addr: $00794B4E
+WebApp_BPKAD.exe: 000006FC: 11:01:40 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: dGu5KplNBP10959B32B ) : Addr: $00794B4E
+WebApp_BPKAD.exe: 00001E94: 11:05:21 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Invalid URI: /srs6/serv/urn:verificationservices ) : Addr: $00794B4E
+WebApp_BPKAD.exe: 00000E3C: 11:10:48 [[FireDAC][Phys][ODBC][Microsoft][SQL Server Native Client 11.0][SQL Server]Invalid column name 'kode_unit'.-127.0.0.1]:EMSSQLNativeException : [FireDAC][Phys][ODBC][Microsoft][SQL Server Native Client 11.0][SQL Server]Invalid column name 'kode_unit'. : Addr: $008CE319
+WebApp_BPKAD.exe: 00004310: 11:20:57 []:EAccessViolation : Access violation at address 80000000. Read of address 80000000 : Addr: $80000000
+WebApp_BPKAD.exe: 00003218: 11:26:03 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: rpDzz6Gfjd10959C73E ) : Addr: $00794B4E
+WebApp_BPKAD.exe: 00003218: 11:26:03 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: rpDzz6Gfjd10959C73E ) : Addr: $00794B4E
+WebApp_BPKAD.exe: 00004310: 11:36:08 []:EInvalidPointer : Invalid pointer operation : Addr: $00409955
+WebApp_BPKAD.exe: 000007BC: 13:05:21 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Invalid URI: /srs6/serv/urn:verificationservices ) : Addr: $00794B4E
+WebApp_BPKAD.exe: 000033CC: 15:55:32 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 000033CC: 15:55:32 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 000033CC: 15:55:33 [TUniServerModule]:HTTP Server Stopped.
+WebApp_BPKAD.exe: 000033CC: 15:55:33 [TUniGUISessionManager]:Terminating Session manager.
+WebApp_BPKAD.exe: 000033CC: 15:55:33 [TUniGUISessionManager]:Stopping Cache Eraser...
+WebApp_BPKAD.exe: 000033CC: 15:55:33 [TUniGUISessionManager]:Cache Eraser Stopped.
+WebApp_BPKAD.exe: 000033CC: 15:55:33 [TUniGUISessionManager]:Destroying Worker Threads.
+WebApp_BPKAD.exe: 000033CC: 15:55:33 [TUniGUISessionManager]:Session manager terminated.
+WebApp_BPKAD.exe: 000033CC: 15:55:33 [TUniServerModule]:Server Shutdown Completed.
+WebApp_BPKAD.exe: 000033CC: 15:55:33 []:<-------------------------------------------------------------->
+WebApp_BPKAD.exe: 000033CC: 15:55:33 [Terminated]:Exit Code: 0
+WebApp_BPKAD.exe: 00001D58: 16:22:40 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 00001D58: 16:22:40 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 00001D58: 16:22:40 [TUniServerModule]:Starting HTTP Server on Port: 85...
+WebApp_BPKAD.exe: 00001D58: 16:22:41 [TUniServerModule]:HTTP Server Started on Port: 85
+WebApp_BPKAD.exe: 00001098: 16:22:46 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: JYxbv1skvk10959CDDB ) : Addr: $00794B4E
+WebApp_BPKAD.exe: 00001098: 16:22:46 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: JYxbv1skvk10959CDDB ) : Addr: $00794B4E
+WebApp_BPKAD.exe: 00000F5C: 16:23:41 []:EAccessViolation : Access violation at address 00409A48 in module 'WebApp_BPKAD.exe'. Read of address FFFFFFFD : Addr: $00409A48
+WebApp_BPKAD.exe: 00001D58: 16:25:30 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 00001D58: 16:25:30 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 00001D58: 16:25:31 [TUniServerModule]:HTTP Server Stopped.
+WebApp_BPKAD.exe: 00001D58: 16:25:31 [TUniGUISessionManager]:Terminating Session manager.
+WebApp_BPKAD.exe: 00001D58: 16:25:31 [TUniGUISessionManager]:Stopping Cache Eraser...
+WebApp_BPKAD.exe: 00001D58: 16:25:31 [TUniGUISessionManager]:Cache Eraser Stopped.
+WebApp_BPKAD.exe: 00001D58: 16:25:31 []:EInvalidPointer : Invalid pointer operation : Addr: $00409955
+WebApp_BPKAD.exe: 00001D58: 16:25:31 [TUniGUISessionManager]:Destroying Worker Threads.
+WebApp_BPKAD.exe: 00001D58: 16:25:31 [TUniGUISessionManager]:Session manager terminated.
+WebApp_BPKAD.exe: 00001D58: 16:25:31 [TUniServerModule]:Server Shutdown Completed.
+WebApp_BPKAD.exe: 00001D58: 16:25:31 []:<-------------------------------------------------------------->
+WebApp_BPKAD.exe: 00001D58: 16:25:31 [Terminated]:Exit Code: 0
+WebApp_BPKAD.exe: 00000F3C: 16:25:34 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 00000F3C: 16:25:34 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 00000F3C: 16:25:34 [TUniServerModule]:Starting HTTP Server on Port: 85...
+WebApp_BPKAD.exe: 00000F3C: 16:25:34 [TUniServerModule]:HTTP Server Started on Port: 85
+WebApp_BPKAD.exe: 00001A54: 16:25:40 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: foj11AbXHh1095A1E98 ) : Addr: $00794B4E
+WebApp_BPKAD.exe: 00001A54: 16:25:40 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: foj11AbXHh1095A1E98 ) : Addr: $00794B4E
+WebApp_BPKAD.exe: 00003F7C: 16:36:30 []:EAccessViolation : Access violation at address 00409A48 in module 'WebApp_BPKAD.exe'. Read of address FFFFFFFD : Addr: $00409A48
+WebApp_BPKAD.exe: 00000F3C: 16:36:50 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 00000F3C: 16:36:50 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 00000F3C: 16:36:51 [TUniServerModule]:HTTP Server Stopped.
+WebApp_BPKAD.exe: 00000F3C: 16:36:51 [TUniGUISessionManager]:Terminating Session manager.
+WebApp_BPKAD.exe: 00000F3C: 16:36:51 [TUniGUISessionManager]:Stopping Cache Eraser...
+WebApp_BPKAD.exe: 00000F3C: 16:36:51 [TUniGUISessionManager]:Cache Eraser Stopped.
+WebApp_BPKAD.exe: 00000F3C: 16:36:51 [TUniGUISessionManager]:Destroying Worker Threads.
+WebApp_BPKAD.exe: 00000F3C: 16:36:51 [TUniGUISessionManager]:Session manager terminated.
+WebApp_BPKAD.exe: 00000F3C: 16:36:51 [TUniServerModule]:Server Shutdown Completed.
+WebApp_BPKAD.exe: 00000F3C: 16:36:51 []:<-------------------------------------------------------------->
+WebApp_BPKAD.exe: 00000F3C: 16:36:51 [Terminated]:Exit Code: 0
+WebApp_BPKAD.exe: 00002464: 16:36:52 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 00002464: 16:36:52 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 00002464: 16:36:52 [TUniServerModule]:Starting HTTP Server on Port: 85...
+WebApp_BPKAD.exe: 00002464: 16:36:53 [TUniServerModule]:HTTP Server Started on Port: 85
+WebApp_BPKAD.exe: 000036DC: 16:36:56 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: 2UEmuRtj1y1095A1F22 ) : Addr: $00794B4E
+WebApp_BPKAD.exe: 000036DC: 16:36:57 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: 2UEmuRtj1y1095A1F22 ) : Addr: $00794B4E
+WebApp_BPKAD.exe: 00001E2C: 16:37:48 [127.0.0.1]:EDatabaseError : Field 'persetujuan' must have a value : Addr: $00660F5F
+WebApp_BPKAD.exe: 00001E2C: 16:38:16 [127.0.0.1]:EDatabaseError : Field 'persetujuan' must have a value : Addr: $00660F5F
+WebApp_BPKAD.exe: 00002294: 16:45:18 [127.0.0.1]:EDatabaseError : Field 'persetujuan' must have a value : Addr: $00660F5F
+WebApp_BPKAD.exe: 00001D38: 16:55:40 []:EAccessViolation : Access violation at address 00409A48 in module 'WebApp_BPKAD.exe'. Read of address FFFFFFFD : Addr: $00409A48
+WebApp_BPKAD.exe: 000016C8: 16:57:01 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Invalid URI: /srs6/serv/urn:verificationservices ) : Addr: $00794B4E
+WebApp_BPKAD.exe: 000025EC: 17:03:54 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: t6zFJkD6wo1095A2231 ) : Addr: $00794B4E
+WebApp_BPKAD.exe: 000025EC: 17:03:54 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: t6zFJkD6wo1095A2231 ) : Addr: $00794B4E
+WebApp_BPKAD.exe: 000025EC: 17:03:54 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: t6zFJkD6wo1095A2231 ) : Addr: $00794B4E
+WebApp_BPKAD.exe: 00002464: 17:04:08 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 00002464: 17:04:08 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 00002464: 17:04:09 [TUniServerModule]:HTTP Server Stopped.
+WebApp_BPKAD.exe: 00002464: 17:04:09 [TUniGUISessionManager]:Terminating Session manager.
+WebApp_BPKAD.exe: 00002464: 17:04:09 [TUniGUISessionManager]:Stopping Cache Eraser...
+WebApp_BPKAD.exe: 00002464: 17:04:09 [TUniGUISessionManager]:Cache Eraser Stopped.
+WebApp_BPKAD.exe: 00002464: 17:04:09 []:EInvalidPointer : Invalid pointer operation : Addr: $00409955
+WebApp_BPKAD.exe: 00002464: 17:04:09 [TUniGUISessionManager]:Destroying Worker Threads.
+WebApp_BPKAD.exe: 00002464: 17:04:09 [TUniGUISessionManager]:Session manager terminated.
+WebApp_BPKAD.exe: 00002464: 17:04:09 [TUniServerModule]:Server Shutdown Completed.
+WebApp_BPKAD.exe: 00002464: 17:04:09 []:<-------------------------------------------------------------->
+WebApp_BPKAD.exe: 00002464: 17:04:09 [Terminated]:Exit Code: 0
+WebApp_BPKAD.exe: 00003BC4: 17:06:56 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 00003BC4: 17:06:56 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 00003BC4: 17:06:57 [TUniServerModule]:Starting HTTP Server on Port: 85...
+WebApp_BPKAD.exe: 00003BC4: 17:06:57 [TUniServerModule]:HTTP Server Started on Port: 85
+WebApp_BPKAD.exe: 000029CC: 17:07:01 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: cQiv2LE4Hs1095A2980 ) : Addr: $00794B4E
+WebApp_BPKAD.exe: 000029CC: 17:07:01 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: cQiv2LE4Hs1095A2980 ) : Addr: $00794B4E
+WebApp_BPKAD.exe: 000029CC: 17:07:37 [127.0.0.1]:EDatabaseError : Field 'persetujuan' must have a value : Addr: $00660F5F
+WebApp_BPKAD.exe: 000029CC: 17:07:46 [127.0.0.1]:EDatabaseError : Field 'persetujuan' must have a value : Addr: $00660F5F
+WebApp_BPKAD.exe: 000029CC: 17:08:42 [127.0.0.1]:EDatabaseError : Field 'persetujuan' must have a value : Addr: $00660F5F
+WebApp_BPKAD.exe: 00003BC4: 17:08:56 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 00003BC4: 17:08:56 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 00003BC4: 17:08:57 [TUniServerModule]:HTTP Server Stopped.
+WebApp_BPKAD.exe: 00003BC4: 17:08:57 [TUniGUISessionManager]:Terminating Session manager.
+WebApp_BPKAD.exe: 00003BC4: 17:08:57 [TUniGUISessionManager]:Stopping Cache Eraser...
+WebApp_BPKAD.exe: 00003BC4: 17:08:57 [TUniGUISessionManager]:Cache Eraser Stopped.
+WebApp_BPKAD.exe: 00003BC4: 17:08:57 []:EAccessViolation : Access violation at address 00409A48 in module 'WebApp_BPKAD.exe'. Read of address FFFFFFFD : Addr: $00409A48
+WebApp_BPKAD.exe: 00003BC4: 17:08:57 [TUniGUISessionManager]:Destroying Worker Threads.
+WebApp_BPKAD.exe: 00003BC4: 17:08:57 [TUniGUISessionManager]:Session manager terminated.
+WebApp_BPKAD.exe: 00003BC4: 17:08:58 [TUniServerModule]:Server Shutdown Completed.
+WebApp_BPKAD.exe: 00003BC4: 17:08:58 []:<-------------------------------------------------------------->
+WebApp_BPKAD.exe: 00003BC4: 17:08:58 [Terminated]:Exit Code: 0
+WebApp_BPKAD.exe: 00003D6C: 17:08:59 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 00003D6C: 17:08:59 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 00003D6C: 17:08:59 [TUniServerModule]:Starting HTTP Server on Port: 85...
+WebApp_BPKAD.exe: 00003D6C: 17:09:00 [TUniServerModule]:HTTP Server Started on Port: 85
+WebApp_BPKAD.exe: 00002D30: 17:09:07 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: lKDYisT9A31095A2A59 ) : Addr: $00794B4E
+WebApp_BPKAD.exe: 00002D30: 17:09:07 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: lKDYisT9A31095A2A59 ) : Addr: $00794B4E
+WebApp_BPKAD.exe: 00001AAC: 17:10:21 [127.0.0.1]:EDatabaseError : Field 'created_at' must have a value : Addr: $00660F5F
+WebApp_BPKAD.exe: 000016BC: 17:14:15 [127.0.0.1]:EDatabaseError : Field 'created_at' must have a value : Addr: $00660F5F
+WebApp_BPKAD.exe: 00003D6C: 17:14:33 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 00003D6C: 17:14:33 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 00003D6C: 17:14:34 [TUniServerModule]:HTTP Server Stopped.
+WebApp_BPKAD.exe: 00003D6C: 17:14:34 [TUniGUISessionManager]:Terminating Session manager.
+WebApp_BPKAD.exe: 00003D6C: 17:14:34 [TUniGUISessionManager]:Stopping Cache Eraser...
+WebApp_BPKAD.exe: 00003D6C: 17:14:34 [TUniGUISessionManager]:Cache Eraser Stopped.
+WebApp_BPKAD.exe: 00003D6C: 17:14:35 []:EAccessViolation : Access violation at address 00409A48 in module 'WebApp_BPKAD.exe'. Read of address FFFFFFFD : Addr: $00409A48
+WebApp_BPKAD.exe: 00003D6C: 17:14:35 [TUniGUISessionManager]:Destroying Worker Threads.
+WebApp_BPKAD.exe: 00003D6C: 17:14:35 [TUniGUISessionManager]:Session manager terminated.
+WebApp_BPKAD.exe: 00003D6C: 17:14:35 [TUniServerModule]:Server Shutdown Completed.
+WebApp_BPKAD.exe: 00003D6C: 17:14:35 []:<-------------------------------------------------------------->
+WebApp_BPKAD.exe: 00003D6C: 17:14:35 [Terminated]:Exit Code: 0
+WebApp_BPKAD.exe: 00003C40: 17:14:37 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 00003C40: 17:14:37 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 00003C40: 17:14:38 [TUniServerModule]:Starting HTTP Server on Port: 85...
+WebApp_BPKAD.exe: 00003C40: 17:14:38 [TUniServerModule]:HTTP Server Started on Port: 85
+WebApp_BPKAD.exe: 00002534: 17:14:47 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: ApTEjYqjwY1095A2AEB ) : Addr: $00794B4E
+WebApp_BPKAD.exe: 00002534: 17:14:47 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: ApTEjYqjwY1095A2AEB ) : Addr: $00794B4E
+WebApp_BPKAD.exe: 00002F34: 17:15:25 [127.0.0.1]:EDatabaseError : Field 'deleted' must have a value : Addr: $00660F5F
+WebApp_BPKAD.exe: 00003C40: 17:15:44 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 00003C40: 17:15:44 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 00003C40: 17:15:45 [TUniServerModule]:HTTP Server Stopped.
+WebApp_BPKAD.exe: 00003C40: 17:15:45 [TUniGUISessionManager]:Terminating Session manager.
+WebApp_BPKAD.exe: 00003C40: 17:15:45 [TUniGUISessionManager]:Stopping Cache Eraser...
+WebApp_BPKAD.exe: 00003C40: 17:15:45 [TUniGUISessionManager]:Cache Eraser Stopped.
+WebApp_BPKAD.exe: 00003C40: 17:15:45 []:EAccessViolation : Access violation at address 00409A48 in module 'WebApp_BPKAD.exe'. Read of address FFFFFFFD : Addr: $00409A48
+WebApp_BPKAD.exe: 00003C40: 17:15:45 [TUniGUISessionManager]:Destroying Worker Threads.
+WebApp_BPKAD.exe: 00003C40: 17:15:45 [TUniGUISessionManager]:Session manager terminated.
+WebApp_BPKAD.exe: 00003C40: 17:15:45 [TUniServerModule]:Server Shutdown Completed.
+WebApp_BPKAD.exe: 00003C40: 17:15:45 []:<-------------------------------------------------------------->
+WebApp_BPKAD.exe: 00003C40: 17:15:45 [Terminated]:Exit Code: 0
+WebApp_BPKAD.exe: 000038B0: 17:22:23 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 000038B0: 17:22:23 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 000038B0: 17:22:23 [TUniServerModule]:Starting HTTP Server on Port: 85...
+WebApp_BPKAD.exe: 000038B0: 17:22:23 [TUniServerModule]:HTTP Server Started on Port: 85
+WebApp_BPKAD.exe: 000035D8: 17:22:27 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: RWrgMPY8zG1095A2C75 ) : Addr: $00794B4E
+WebApp_BPKAD.exe: 000035D8: 17:22:27 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: RWrgMPY8zG1095A2C75 ) : Addr: $00794B4E
+WebApp_BPKAD.exe: 000038B0: 17:25:15 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 000038B0: 17:25:15 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 000038B0: 17:25:16 [TUniServerModule]:HTTP Server Stopped.
+WebApp_BPKAD.exe: 000038B0: 17:25:16 [TUniGUISessionManager]:Terminating Session manager.
+WebApp_BPKAD.exe: 000038B0: 17:25:16 [TUniGUISessionManager]:Stopping Cache Eraser...
+WebApp_BPKAD.exe: 000038B0: 17:25:16 [TUniGUISessionManager]:Cache Eraser Stopped.
+WebApp_BPKAD.exe: 000038B0: 17:25:16 []:EAccessViolation : Access violation at address 00409A48 in module 'WebApp_BPKAD.exe'. Read of address FFFFFFFD : Addr: $00409A48
+WebApp_BPKAD.exe: 000038B0: 17:25:16 [TUniGUISessionManager]:Destroying Worker Threads.
+WebApp_BPKAD.exe: 000038B0: 17:25:16 [TUniGUISessionManager]:Session manager terminated.
+WebApp_BPKAD.exe: 000038B0: 17:25:16 [TUniServerModule]:Server Shutdown Completed.
+WebApp_BPKAD.exe: 000038B0: 17:25:16 []:<-------------------------------------------------------------->
+WebApp_BPKAD.exe: 000038B0: 17:25:16 [Terminated]:Exit Code: 0
+WebApp_BPKAD.exe: 00003AF8: 17:25:19 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 00003AF8: 17:25:19 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 00003AF8: 17:25:19 [TUniServerModule]:Starting HTTP Server on Port: 85...
+WebApp_BPKAD.exe: 00003AF8: 17:25:20 [TUniServerModule]:HTTP Server Started on Port: 85
+WebApp_BPKAD.exe: 00001F9C: 17:25:24 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: rze6llSqqC1095A2E89 ) : Addr: $00794B4E
+WebApp_BPKAD.exe: 00001F9C: 17:25:24 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: rze6llSqqC1095A2E89 ) : Addr: $00794B4E
+WebApp_BPKAD.exe: 00003AF8: 17:32:18 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 00003AF8: 17:32:18 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 00003AF8: 17:32:18 [TUniServerModule]:HTTP Server Stopped.
+WebApp_BPKAD.exe: 00003AF8: 17:32:18 [TUniGUISessionManager]:Terminating Session manager.
+WebApp_BPKAD.exe: 00003AF8: 17:32:18 [TUniGUISessionManager]:Stopping Cache Eraser...
+WebApp_BPKAD.exe: 00003AF8: 17:32:18 [TUniGUISessionManager]:Cache Eraser Stopped.
+WebApp_BPKAD.exe: 00003AF8: 17:32:19 []:EAccessViolation : Access violation at address 00409A48 in module 'WebApp_BPKAD.exe'. Read of address FFFFFFFD : Addr: $00409A48
+WebApp_BPKAD.exe: 00003AF8: 17:32:19 [TUniGUISessionManager]:Destroying Worker Threads.
+WebApp_BPKAD.exe: 00003AF8: 17:32:19 [TUniGUISessionManager]:Session manager terminated.
+WebApp_BPKAD.exe: 00003AF8: 17:32:19 [TUniServerModule]:Server Shutdown Completed.
+WebApp_BPKAD.exe: 00003AF8: 17:32:19 []:<-------------------------------------------------------------->
+WebApp_BPKAD.exe: 00003AF8: 17:32:19 [Terminated]:Exit Code: 0
+WebApp_BPKAD.exe: 00003BE0: 17:32:23 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 00003BE0: 17:32:23 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 00003BE0: 17:32:23 [TUniServerModule]:Starting HTTP Server on Port: 85...
+WebApp_BPKAD.exe: 00003BE0: 17:32:23 [TUniServerModule]:HTTP Server Started on Port: 85
+WebApp_BPKAD.exe: 00001CB0: 17:32:29 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: JYF9IGGDH31095A2F55 ) : Addr: $00794B4E
+WebApp_BPKAD.exe: 00001CB0: 17:32:29 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: JYF9IGGDH31095A2F55 ) : Addr: $00794B4E
+WebApp_BPKAD.exe: 00000538: 17:36:43 []:EAccessViolation : Access violation at address 00409A48 in module 'WebApp_BPKAD.exe'. Read of address FFFFFFFD : Addr: $00409A48
+WebApp_BPKAD.exe: 000008BC: 17:37:28 [[FireDAC][Phys][ODBC][Microsoft][SQL Server Native Client 11.0][SQL Server]Invalid column name 'kode_unit'.-127.0.0.1]:EMSSQLNativeException : [FireDAC][Phys][ODBC][Microsoft][SQL Server Native Client 11.0][SQL Server]Invalid column name 'kode_unit'. : Addr: $008CE319
+WebApp_BPKAD.exe: 00000538: 17:41:44 []:EInvalidPointer : Invalid pointer operation : Addr: $00409955
+WebApp_BPKAD.exe: 00000538: 17:41:44 []:EAccessViolation : Access violation at address 80000000. Read of address 80000000 : Addr: $80000000
+WebApp_BPKAD.exe: 00003BE0: 17:41:57 [Exit]:Unexpected attempt to terminate server application with Exit Code: 0

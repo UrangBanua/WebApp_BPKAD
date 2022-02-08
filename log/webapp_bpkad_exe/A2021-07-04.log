@@ -1,0 +1,17 @@
+WebApp_BPKAD.exe: 000020A4: 05:17:00 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 000020A4: 05:17:00 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 000020A4: 05:17:00 [TUniServerModule]:Starting HTTP Server on Port: 80...
+WebApp_BPKAD.exe: 000020A4: 05:17:00 [TUniServerModule]:HTTP Server Started on Port: 80
+WebApp_BPKAD.exe: 00002AD8: 05:17:22 [HandleFileRequest[127.0.0.1]]:File not found: D:\OneDrive\PROJECTS\BPKAD HST\WebApp_BPKAD\files\images\8.jpg
+WebApp_BPKAD.exe: 00001F84: 05:17:45 [HandleFileRequest[127.0.0.1]]:File not found: D:\OneDrive\PROJECTS\BPKAD HST\WebApp_BPKAD\files\images\8.jpg
+WebApp_BPKAD.exe: 000020A4: 05:17:51 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 000020A4: 05:17:51 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 000020A4: 05:17:52 [TUniServerModule]:HTTP Server Stopped.
+WebApp_BPKAD.exe: 000020A4: 05:17:52 [TUniGUISessionManager]:Terminating Session manager.
+WebApp_BPKAD.exe: 000020A4: 05:17:52 [TUniGUISessionManager]:Stopping Cache Eraser...
+WebApp_BPKAD.exe: 000020A4: 05:17:52 [TUniGUISessionManager]:Cache Eraser Stopped.
+WebApp_BPKAD.exe: 000020A4: 05:17:52 [TUniGUISessionManager]:Destroying Worker Threads.
+WebApp_BPKAD.exe: 000020A4: 05:17:52 [TUniGUISessionManager]:Session manager terminated.
+WebApp_BPKAD.exe: 000020A4: 05:17:52 [TUniServerModule]:Server Shutdown Completed.
+WebApp_BPKAD.exe: 000020A4: 05:17:52 []:<-------------------------------------------------------------->
+WebApp_BPKAD.exe: 000020A4: 05:17:52 [Terminated]:Exit Code: 0

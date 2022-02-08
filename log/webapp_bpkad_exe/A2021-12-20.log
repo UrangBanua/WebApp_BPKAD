@@ -1,0 +1,17 @@
+WebApp_BPKAD.exe: 00003BD0: 16:56:40 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 00003BD0: 16:56:40 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 00003BD0: 16:56:40 [TUniServerModule]:Global Cache Folder Erased. <35> Files deleted.
+WebApp_BPKAD.exe: 00003BD0: 16:56:40 [TUniServerModule]:Starting HTTP Server on Port: 85...
+WebApp_BPKAD.exe: 00003BD0: 16:56:40 [TUniServerModule]:HTTP Server Started on Port: 85
+WebApp_BPKAD.exe: 00003BD0: 16:57:19 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 00003BD0: 16:57:19 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 00003BD0: 16:57:20 [TUniServerModule]:HTTP Server Stopped.
+WebApp_BPKAD.exe: 00003BD0: 16:57:20 [TUniGUISessionManager]:Terminating Session manager.
+WebApp_BPKAD.exe: 00003BD0: 16:57:20 [TUniGUISessionManager]:Stopping Cache Eraser...
+WebApp_BPKAD.exe: 00003BD0: 16:57:20 [TUniGUISessionManager]:Cache Eraser Stopped.
+WebApp_BPKAD.exe: 00003BD0: 16:57:21 []:EAccessViolation : Access violation at address 00409DAC in module 'WebApp_BPKAD.exe'. Read of address FFFFFFFD : Addr: $00409DAC
+WebApp_BPKAD.exe: 00003BD0: 16:57:21 [TUniGUISessionManager]:Destroying Worker Threads.
+WebApp_BPKAD.exe: 00003BD0: 16:57:21 [TUniGUISessionManager]:Session manager terminated.
+WebApp_BPKAD.exe: 00003BD0: 16:57:21 [TUniServerModule]:Server Shutdown Completed.
+WebApp_BPKAD.exe: 00003BD0: 16:57:21 []:<-------------------------------------------------------------->
+WebApp_BPKAD.exe: 00003BD0: 16:57:21 [Terminated]:Exit Code: 0

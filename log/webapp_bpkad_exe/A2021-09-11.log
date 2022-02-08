@@ -1,0 +1,7 @@
+WebApp_BPKAD.exe: 00002DA4: 18:58:29 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 00002DA4: 18:58:29 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 00002DA4: 18:58:29 [TUniServerModule]:Starting HTTP Server on Port: 85...
+WebApp_BPKAD.exe: 00002DA4: 18:58:31 [TUniServerModule]:HTTP Server Started on Port: 85
+WebApp_BPKAD.exe: 00002DA4: 18:59:13 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 00002DA4: 18:59:13 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 000017E4: 18:59:29 [127.0.0.1]:EMSSQLNativeException : [FireDAC][Phys][ODBC][Microsoft][SQL Server Native Client 11.0]Named Pipes Provider: Could not open a connection to SQL Server [53].  : Addr: $008DDB1E

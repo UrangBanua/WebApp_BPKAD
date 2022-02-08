@@ -1,0 +1,15 @@
+WebApp_BPKAD.exe: 00002184: 20:37:03 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 00002184: 20:37:03 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 00002184: 20:37:03 [TUniServerModule]:Starting HTTP Server on Port: 85...
+WebApp_BPKAD.exe: 00002184: 20:37:03 [TUniServerModule]:HTTP Server Started on Port: 85
+WebApp_BPKAD.exe: 00002184: 20:37:08 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 00002184: 20:37:08 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 00002184: 20:37:09 [TUniServerModule]:HTTP Server Stopped.
+WebApp_BPKAD.exe: 00002184: 20:37:09 [TUniGUISessionManager]:Terminating Session manager.
+WebApp_BPKAD.exe: 00002184: 20:37:09 [TUniGUISessionManager]:Stopping Cache Eraser...
+WebApp_BPKAD.exe: 00002184: 20:37:09 [TUniGUISessionManager]:Cache Eraser Stopped.
+WebApp_BPKAD.exe: 00002184: 20:37:09 [TUniGUISessionManager]:Destroying Worker Threads.
+WebApp_BPKAD.exe: 00002184: 20:37:09 [TUniGUISessionManager]:Session manager terminated.
+WebApp_BPKAD.exe: 00002184: 20:37:09 [TUniServerModule]:Server Shutdown Completed.
+WebApp_BPKAD.exe: 00002184: 20:37:09 []:<-------------------------------------------------------------->
+WebApp_BPKAD.exe: 00002184: 20:37:09 [Terminated]:Exit Code: 0

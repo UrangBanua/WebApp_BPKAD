@@ -1,0 +1,22 @@
+WebApp_BPKAD.exe: 000016C8: 13:09:17 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 000016C8: 13:09:17 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 000016C8: 13:09:17 [TUniServerModule]:Global Cache Folder Erased. <23> Files deleted.
+WebApp_BPKAD.exe: 000016C8: 13:09:17 [TUniServerModule]:Starting HTTP Server on Port: 85...
+WebApp_BPKAD.exe: 000016C8: 13:09:18 [TUniServerModule]:HTTP Server Started on Port: 85
+WebApp_BPKAD.exe: 00003D10: 13:16:28 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Invalid URI: /srs6/serv/urn:verificationservices ) : Addr: $007E015E
+WebApp_BPKAD.exe: 00002544: 13:25:33 []:EInvalidPointer : Invalid pointer operation : Addr: $00409DA9
+WebApp_BPKAD.exe: 00000DAC: 14:06:45 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Invalid URI: /srs6/serv/urn:publicsanctservices ) : Addr: $007E015E
+WebApp_BPKAD.exe: 00002874: 14:16:29 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Invalid URI: /srs6/serv/urn:publicsanctservices ) : Addr: $007E015E
+WebApp_BPKAD.exe: 000043D8: 15:06:57 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Invalid URI: /srs6/serv/urn:verificationservices ) : Addr: $007E015E
+WebApp_BPKAD.exe: 00003594: 15:16:28 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Invalid URI: /srs6/serv/urn:verificationservices ) : Addr: $007E015E
+WebApp_BPKAD.exe: 000016C8: 16:42:41 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 000016C8: 16:42:41 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 000016C8: 16:42:42 [TUniServerModule]:HTTP Server Stopped.
+WebApp_BPKAD.exe: 000016C8: 16:42:42 [TUniGUISessionManager]:Terminating Session manager.
+WebApp_BPKAD.exe: 000016C8: 16:42:42 [TUniGUISessionManager]:Stopping Cache Eraser...
+WebApp_BPKAD.exe: 000016C8: 16:42:42 [TUniGUISessionManager]:Cache Eraser Stopped.
+WebApp_BPKAD.exe: 000016C8: 16:42:42 [TUniGUISessionManager]:Destroying Worker Threads.
+WebApp_BPKAD.exe: 000016C8: 16:42:42 [TUniGUISessionManager]:Session manager terminated.
+WebApp_BPKAD.exe: 000016C8: 16:42:42 [TUniServerModule]:Server Shutdown Completed.
+WebApp_BPKAD.exe: 000016C8: 16:42:42 []:<-------------------------------------------------------------->
+WebApp_BPKAD.exe: 000016C8: 16:42:42 [Terminated]:Exit Code: 0

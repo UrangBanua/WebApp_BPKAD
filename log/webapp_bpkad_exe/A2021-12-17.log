@@ -1,0 +1,31 @@
+WebApp_BPKAD.exe: 0000157C: 10:04:33 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 0000157C: 10:04:33 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 0000157C: 10:04:33 [TUniServerModule]:Starting HTTP Server on Port: 85...
+WebApp_BPKAD.exe: 0000157C: 10:04:34 [TUniServerModule]:HTTP Server Started on Port: 85
+WebApp_BPKAD.exe: 0000353C: 10:05:13 []:EAccessViolation : Access violation at address 00409A48 in module 'WebApp_BPKAD.exe'. Read of address FFFFFFFD : Addr: $00409A48
+WebApp_BPKAD.exe: 0000157C: 10:05:25 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 0000157C: 10:05:25 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 0000157C: 10:05:26 [TUniServerModule]:HTTP Server Stopped.
+WebApp_BPKAD.exe: 0000157C: 10:05:26 [TUniGUISessionManager]:Terminating Session manager.
+WebApp_BPKAD.exe: 0000157C: 10:05:26 [TUniGUISessionManager]:Stopping Cache Eraser...
+WebApp_BPKAD.exe: 0000157C: 10:05:26 [TUniGUISessionManager]:Cache Eraser Stopped.
+WebApp_BPKAD.exe: 0000157C: 10:05:26 [TUniGUISessionManager]:Destroying Worker Threads.
+WebApp_BPKAD.exe: 0000157C: 10:05:26 [TUniGUISessionManager]:Session manager terminated.
+WebApp_BPKAD.exe: 0000157C: 10:05:26 [TUniServerModule]:Server Shutdown Completed.
+WebApp_BPKAD.exe: 0000157C: 10:05:26 []:<-------------------------------------------------------------->
+WebApp_BPKAD.exe: 0000157C: 10:05:26 [Terminated]:Exit Code: 0
+WebApp_BPKAD.exe: 00003654: 11:21:45 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 00003654: 11:21:45 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 00003654: 11:21:45 [TUniServerModule]:Starting HTTP Server on Port: 85...
+WebApp_BPKAD.exe: 00003654: 11:21:46 [TUniServerModule]:HTTP Server Started on Port: 85
+WebApp_BPKAD.exe: 00002864: 11:22:36 [127.0.0.1]:Exception raised while destroying session: Access violation at address 0040C152 in module 'WebApp_BPKAD.exe'. Write of address 00720067
+WebApp_BPKAD.exe: 00002864: 11:22:37 [127.0.0.1]:EAccessViolation : Access violation at address 0040C152 in module 'WebApp_BPKAD.exe'. Write of address 00720067 : Addr: $0040C152
+WebApp_BPKAD.exe: 00001C80: 11:27:03 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 00001C80: 11:27:03 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 00001C80: 11:27:03 [TUniServerModule]:Global Cache Folder Erased. <35> Files deleted.
+WebApp_BPKAD.exe: 00001C80: 11:27:03 [TUniServerModule]:Starting HTTP Server on Port: 85...
+WebApp_BPKAD.exe: 00001C80: 11:27:04 [TUniServerModule]:HTTP Server Started on Port: 85
+WebApp_BPKAD.exe: 00003020: 11:29:34 [127.0.0.1]:Exception raised while destroying session: Access violation at address 0040C152 in module 'WebApp_BPKAD.exe'. Write of address 00720067
+WebApp_BPKAD.exe: 00003020: 11:29:35 [127.0.0.1]:EAccessViolation : Access violation at address 0040C152 in module 'WebApp_BPKAD.exe'. Write of address 00720067 : Addr: $0040C152
+WebApp_BPKAD.exe: 00003020: 11:30:00 []:EInvalidPointer : Invalid pointer operation : Addr: $00409CB9
+WebApp_BPKAD.exe: 00001C80: 11:30:17 [Exit]:Unexpected attempt to terminate server application with Exit Code: 0

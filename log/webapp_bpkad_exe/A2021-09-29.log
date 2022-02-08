@@ -1,0 +1,17 @@
+WebApp_BPKAD.exe: 00004E40: 09:45:12 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 00004E40: 09:45:12 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 00004E40: 09:45:12 [TUniServerModule]:Starting HTTP Server on Port: 85...
+WebApp_BPKAD.exe: 00004E40: 09:45:12 [TUniServerModule]:HTTP Server Started on Port: 85
+WebApp_BPKAD.exe: 00003BC8: 09:45:52 []:EInvalidPointer : Invalid pointer operation : Addr: $00409DA9
+WebApp_BPKAD.exe: 00004E40: 09:46:02 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 00004E40: 09:46:02 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 00004E40: 09:46:03 [TUniServerModule]:HTTP Server Stopped.
+WebApp_BPKAD.exe: 00004E40: 09:46:03 [TUniGUISessionManager]:Terminating Session manager.
+WebApp_BPKAD.exe: 00004E40: 09:46:03 [TUniGUISessionManager]:Stopping Cache Eraser...
+WebApp_BPKAD.exe: 00004E40: 09:46:03 [TUniGUISessionManager]:Cache Eraser Stopped.
+WebApp_BPKAD.exe: 00004E40: 09:46:03 []:EInvalidPointer : Invalid pointer operation : Addr: $00409DA9
+WebApp_BPKAD.exe: 00004E40: 09:46:04 [TUniGUISessionManager]:Destroying Worker Threads.
+WebApp_BPKAD.exe: 00004E40: 09:46:04 [TUniGUISessionManager]:Session manager terminated.
+WebApp_BPKAD.exe: 00004E40: 09:46:04 [TUniServerModule]:Server Shutdown Completed.
+WebApp_BPKAD.exe: 00004E40: 09:46:04 []:<-------------------------------------------------------------->
+WebApp_BPKAD.exe: 00004E40: 09:46:04 [Terminated]:Exit Code: 0

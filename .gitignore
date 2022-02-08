@@ -24,7 +24,16 @@
 # C++ object files produced when C/C++ Output file generation is configured.
 # Uncomment this if you are not using external objects (zlib library for example).
 #*.obj
-#
+
+# certificate
+certificate_server/
+*.crt
+*.pem
+*.key
+
+# custom project
+*.ini
+*.config
 
 # Delphi compiler-generated binaries (safe to delete)
 *.exe
@@ -60,6 +69,10 @@
 # Delphi history and backups
 __history/
 __recovery/
+temp/
+log/
+cache/
+backup/
 *.~*
 
 # Castalia statistics file (since XE7 Castalia is distributed with Delphi)

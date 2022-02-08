@@ -1,0 +1,23 @@
+WebApp_BPKAD.exe: 00000E24: 10:53:55 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 00000E24: 10:53:55 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 00000E24: 10:53:55 [TUniServerModule]:Starting HTTP Server on Port: 85...
+WebApp_BPKAD.exe: 00000E24: 10:53:56 [TUniServerModule]:HTTP Server Started on Port: 85
+WebApp_BPKAD.exe: 00000B58: 10:56:01 [127.0.0.1]:Exception raised while destroying session: Integer overflow
+WebApp_BPKAD.exe: 00000B58: 10:56:02 [127.0.0.1]:EIntOverflow : Integer overflow : Addr: $42005403
+WebApp_BPKAD.exe: 00000E9C: 11:09:26 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 00000E9C: 11:09:26 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 00000E9C: 11:09:26 [TUniServerModule]:Global Cache Folder Erased. <36> Files deleted.
+WebApp_BPKAD.exe: 00000E9C: 11:09:26 [TUniServerModule]:Starting HTTP Server on Port: 85...
+WebApp_BPKAD.exe: 00000E9C: 11:09:26 [TUniServerModule]:HTTP Server Started on Port: 85
+WebApp_BPKAD.exe: 00001224: 11:24:17 []:EAccessViolation : Access violation at address 00409A48 in module 'WebApp_BPKAD.exe'. Read of address FFFFFFFD : Addr: $00409A48
+WebApp_BPKAD.exe: 00000E9C: 11:38:22 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 00000E9C: 11:38:22 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 00000E9C: 11:38:22 [TUniServerModule]:HTTP Server Stopped.
+WebApp_BPKAD.exe: 00000E9C: 11:38:22 [TUniGUISessionManager]:Terminating Session manager.
+WebApp_BPKAD.exe: 00000E9C: 11:38:22 [TUniGUISessionManager]:Stopping Cache Eraser...
+WebApp_BPKAD.exe: 00000E9C: 11:38:23 [TUniGUISessionManager]:Cache Eraser Stopped.
+WebApp_BPKAD.exe: 00000E9C: 11:38:23 [TUniGUISessionManager]:Destroying Worker Threads.
+WebApp_BPKAD.exe: 00000E9C: 11:38:23 [TUniGUISessionManager]:Session manager terminated.
+WebApp_BPKAD.exe: 00000E9C: 11:38:23 [TUniServerModule]:Server Shutdown Completed.
+WebApp_BPKAD.exe: 00000E9C: 11:38:23 []:<-------------------------------------------------------------->
+WebApp_BPKAD.exe: 00000E9C: 11:38:23 [Terminated]:Exit Code: 0

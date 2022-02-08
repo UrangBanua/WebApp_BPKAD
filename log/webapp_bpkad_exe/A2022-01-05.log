@@ -1,0 +1,30 @@
+WebApp_BPKAD.exe: 00002B24: 08:48:42 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 00002B24: 08:48:42 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 00002B24: 08:48:42 [TUniServerModule]:Starting HTTP Server on Port: 85...
+WebApp_BPKAD.exe: 00002B24: 08:48:42 [TUniServerModule]:HTTP Server Started on Port: 85
+WebApp_BPKAD.exe: 00002B24: 08:48:45 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 00002B24: 08:48:45 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 00002B24: 08:48:45 [TUniServerModule]:HTTP Server Stopped.
+WebApp_BPKAD.exe: 00002B24: 08:48:45 [TUniGUISessionManager]:Terminating Session manager.
+WebApp_BPKAD.exe: 00002B24: 08:48:45 [TUniGUISessionManager]:Stopping Cache Eraser...
+WebApp_BPKAD.exe: 00002B24: 08:48:45 [TUniGUISessionManager]:Cache Eraser Stopped.
+WebApp_BPKAD.exe: 00002B24: 08:48:45 [TUniGUISessionManager]:Destroying Worker Threads.
+WebApp_BPKAD.exe: 00002B24: 08:48:45 [TUniGUISessionManager]:Session manager terminated.
+WebApp_BPKAD.exe: 00002B24: 08:48:45 [TUniServerModule]:Server Shutdown Completed.
+WebApp_BPKAD.exe: 00002B24: 08:48:45 []:<-------------------------------------------------------------->
+WebApp_BPKAD.exe: 00002B24: 08:48:45 [Terminated]:Exit Code: 0
+WebApp_BPKAD.exe: 00004758: 08:49:26 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 00004758: 08:49:26 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 00004758: 08:49:26 [TUniServerModule]:Starting HTTP Server on Port: 85...
+WebApp_BPKAD.exe: 00004758: 08:49:27 [TUniServerModule]:HTTP Server Started on Port: 85
+WebApp_BPKAD.exe: 00004758: 08:49:28 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 00004758: 08:49:28 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 00004758: 08:49:29 [TUniServerModule]:HTTP Server Stopped.
+WebApp_BPKAD.exe: 00004758: 08:49:29 [TUniGUISessionManager]:Terminating Session manager.
+WebApp_BPKAD.exe: 00004758: 08:49:29 [TUniGUISessionManager]:Stopping Cache Eraser...
+WebApp_BPKAD.exe: 00004758: 08:49:29 [TUniGUISessionManager]:Cache Eraser Stopped.
+WebApp_BPKAD.exe: 00004758: 08:49:29 [TUniGUISessionManager]:Destroying Worker Threads.
+WebApp_BPKAD.exe: 00004758: 08:49:29 [TUniGUISessionManager]:Session manager terminated.
+WebApp_BPKAD.exe: 00004758: 08:49:29 [TUniServerModule]:Server Shutdown Completed.
+WebApp_BPKAD.exe: 00004758: 08:49:29 []:<-------------------------------------------------------------->
+WebApp_BPKAD.exe: 00004758: 08:49:29 [Terminated]:Exit Code: 0

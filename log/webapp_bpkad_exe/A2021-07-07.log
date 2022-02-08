@@ -1,0 +1,433 @@
+WebApp_BPKAD.exe: 00004950: 11:34:51 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 00004950: 11:34:51 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 00004950: 11:34:51 [TUniServerModule]:Starting HTTP Server on Port: 80...
+WebApp_BPKAD.exe: 00004950: 11:34:51 [TUniServerModule]:HTTP Server Started on Port: 80
+WebApp_BPKAD.exe: 00004408: 11:35:00 [HandleFileRequest[127.0.0.1]]:File not found: D:\OneDrive\PROJECTS\BPKAD HST\WebApp_BPKAD\files\images\8.jpg
+WebApp_BPKAD.exe: 00004950: 11:39:57 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 00004950: 11:39:57 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 00004950: 11:39:58 [TUniServerModule]:HTTP Server Stopped.
+WebApp_BPKAD.exe: 00004950: 11:39:58 [TUniGUISessionManager]:Terminating Session manager.
+WebApp_BPKAD.exe: 00004950: 11:39:58 [TUniGUISessionManager]:Stopping Cache Eraser...
+WebApp_BPKAD.exe: 00004950: 11:39:58 [TUniGUISessionManager]:Cache Eraser Stopped.
+WebApp_BPKAD.exe: 00004950: 11:39:58 [TUniGUISessionManager]:Destroying Worker Threads.
+WebApp_BPKAD.exe: 00004950: 11:39:58 [TUniGUISessionManager]:Session manager terminated.
+WebApp_BPKAD.exe: 00004950: 11:39:58 [TUniServerModule]:Server Shutdown Completed.
+WebApp_BPKAD.exe: 00004950: 11:39:58 []:<-------------------------------------------------------------->
+WebApp_BPKAD.exe: 00004950: 11:39:58 [Terminated]:Exit Code: 0
+WebApp_BPKAD.exe: 00004E2C: 11:49:32 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 00004E2C: 11:49:32 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 00004E2C: 11:49:32 [TUniServerModule]:Starting HTTP Server on Port: 80...
+WebApp_BPKAD.exe: 00004E2C: 11:49:32 [TUniServerModule]:HTTP Server Started on Port: 80
+WebApp_BPKAD.exe: 000004CC: 11:49:37 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: kM8jlkpV851088D5887 ) : Addr: $00788A02
+WebApp_BPKAD.exe: 000004CC: 11:49:37 [HandleFileRequest[127.0.0.1]]:File not found: D:\OneDrive\PROJECTS\BPKAD HST\WebApp_BPKAD\files\images\8.jpg
+WebApp_BPKAD.exe: 00003534: 11:50:37 [HandleFileRequest[127.0.0.1]]:File not found: D:\OneDrive\PROJECTS\BPKAD HST\WebApp_BPKAD\files\images\8.jpg
+WebApp_BPKAD.exe: 00003C04: 11:51:34 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00002CD8: 11:51:34 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00001440: 11:51:34 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 000013D0: 11:51:35 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 000049A8: 11:51:35 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00003530: 11:51:35 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 000007AC: 11:51:35 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00004570: 11:51:36 [HandleFileRequest[127.0.0.1]]:File not found: D:\OneDrive\PROJECTS\BPKAD HST\WebApp_BPKAD\files\images\8.jpg
+WebApp_BPKAD.exe: 00004E2C: 11:52:13 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 00004E2C: 11:52:13 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 00004E2C: 11:52:14 [TUniServerModule]:HTTP Server Stopped.
+WebApp_BPKAD.exe: 00004E2C: 11:52:14 [TUniGUISessionManager]:Terminating Session manager.
+WebApp_BPKAD.exe: 00004E2C: 11:52:14 [TUniGUISessionManager]:Stopping Cache Eraser...
+WebApp_BPKAD.exe: 00004E2C: 11:52:14 [TUniGUISessionManager]:Cache Eraser Stopped.
+WebApp_BPKAD.exe: 00004E2C: 11:52:14 [TUniGUISessionManager]:Destroying Worker Threads.
+WebApp_BPKAD.exe: 00004E2C: 11:52:14 [TUniGUISessionManager]:Session manager terminated.
+WebApp_BPKAD.exe: 00004E2C: 11:52:14 [TUniServerModule]:Server Shutdown Completed.
+WebApp_BPKAD.exe: 00004E2C: 11:52:14 []:<-------------------------------------------------------------->
+WebApp_BPKAD.exe: 00004E2C: 11:52:14 [Terminated]:Exit Code: 0
+WebApp_BPKAD.exe: 00004F34: 12:04:12 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 00004F34: 12:04:12 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 00004F34: 12:04:12 [TUniServerModule]:Starting HTTP Server on Port: 80...
+WebApp_BPKAD.exe: 00004F34: 12:04:13 [TUniServerModule]:HTTP Server Started on Port: 80
+WebApp_BPKAD.exe: 00004FDC: 12:04:21 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 000022D0: 12:04:21 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 0000378C: 12:04:21 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00003C30: 12:04:22 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: mpOXQTQtsD1088D5D08 ) : Addr: $00788A02
+WebApp_BPKAD.exe: 00000E74: 12:04:22 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00004A78: 12:04:22 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 0000433C: 12:04:22 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00002840: 12:04:22 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00003C30: 12:04:23 [HandleFileRequest[127.0.0.1]]:File not found: D:\OneDrive\PROJECTS\BPKAD HST\WebApp_BPKAD\files\images\8.jpg
+WebApp_BPKAD.exe: 00003A54: 12:04:23 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 000025F4: 12:04:23 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00000D24: 12:04:23 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 0000418C: 12:04:23 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00001968: 12:04:25 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00002164: 12:04:25 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 0000310C: 12:04:25 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00001F2C: 12:04:25 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00004218: 12:04:25 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 0000478C: 12:04:28 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00003C38: 12:04:28 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00001CC8: 12:04:29 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00004D20: 12:04:29 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00001AF4: 12:04:29 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00004F34: 12:06:13 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 00004F34: 12:06:13 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 00004F34: 12:06:14 [TUniServerModule]:HTTP Server Stopped.
+WebApp_BPKAD.exe: 00004F34: 12:06:14 [TUniGUISessionManager]:Terminating Session manager.
+WebApp_BPKAD.exe: 00004F34: 12:06:14 [TUniGUISessionManager]:Stopping Cache Eraser...
+WebApp_BPKAD.exe: 00004F34: 12:06:14 [TUniGUISessionManager]:Cache Eraser Stopped.
+WebApp_BPKAD.exe: 00004F34: 12:06:14 [TUniGUISessionManager]:Destroying Worker Threads.
+WebApp_BPKAD.exe: 00004F34: 12:06:14 [TUniGUISessionManager]:Session manager terminated.
+WebApp_BPKAD.exe: 00004F34: 12:06:14 [TUniServerModule]:Server Shutdown Completed.
+WebApp_BPKAD.exe: 00004F34: 12:06:14 []:<-------------------------------------------------------------->
+WebApp_BPKAD.exe: 00004F34: 12:06:14 [Terminated]:Exit Code: 0
+WebApp_BPKAD.exe: 00004B60: 12:06:16 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 00004B60: 12:06:16 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 00004B60: 12:06:16 [TUniServerModule]:Starting HTTP Server on Port: 80...
+WebApp_BPKAD.exe: 00004B60: 12:06:17 [TUniServerModule]:HTTP Server Started on Port: 80
+WebApp_BPKAD.exe: 0000406C: 12:06:23 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 000006B0: 12:06:24 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00001994: 12:06:24 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: rtrPhV49HG1088D607F ) : Addr: $00788A02
+WebApp_BPKAD.exe: 00002DE8: 12:06:25 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00004478: 12:06:25 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00003728: 12:06:25 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00000A50: 12:06:25 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00001994: 12:06:26 [HandleFileRequest[127.0.0.1]]:File not found: D:\OneDrive\PROJECTS\BPKAD HST\WebApp_BPKAD\files\images\8.jpg
+WebApp_BPKAD.exe: 00002D74: 12:06:26 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00000E44: 12:06:26 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 000048D8: 12:06:26 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 000010EC: 12:06:26 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 0000485C: 12:06:27 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00004364: 12:06:27 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00003FA0: 12:06:27 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00003510: 12:06:27 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00001AB4: 12:06:27 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 000049E0: 12:06:29 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00003434: 12:06:29 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00002154: 12:06:36 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 0000357C: 12:06:36 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00002674: 12:06:36 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 0000056C: 12:06:36 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00002A18: 12:06:36 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00004B60: 12:07:36 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 00004B60: 12:07:36 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 00004B60: 12:07:37 [TUniServerModule]:HTTP Server Stopped.
+WebApp_BPKAD.exe: 00004B60: 12:07:37 [TUniGUISessionManager]:Terminating Session manager.
+WebApp_BPKAD.exe: 00004B60: 12:07:37 [TUniGUISessionManager]:Stopping Cache Eraser...
+WebApp_BPKAD.exe: 00004B60: 12:07:37 [TUniGUISessionManager]:Cache Eraser Stopped.
+WebApp_BPKAD.exe: 00004B60: 12:07:37 [TUniGUISessionManager]:Destroying Worker Threads.
+WebApp_BPKAD.exe: 00004B60: 12:07:37 [TUniGUISessionManager]:Session manager terminated.
+WebApp_BPKAD.exe: 00004B60: 12:07:37 [TUniServerModule]:Server Shutdown Completed.
+WebApp_BPKAD.exe: 00004B60: 12:07:37 []:<-------------------------------------------------------------->
+WebApp_BPKAD.exe: 00004B60: 12:07:37 [Terminated]:Exit Code: 0
+WebApp_BPKAD.exe: 00004268: 12:08:56 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 00004268: 12:08:56 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 00004268: 12:08:56 [TUniServerModule]:Starting HTTP Server on Port: 80...
+WebApp_BPKAD.exe: 00004268: 12:08:57 [TUniServerModule]:HTTP Server Started on Port: 80
+WebApp_BPKAD.exe: 00003F9C: 12:09:05 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 000047A4: 12:09:05 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 000019F4: 12:09:05 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00001698: 12:09:05 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: pKOzrioYUc1088D610E ) : Addr: $00788A02
+WebApp_BPKAD.exe: 00003AEC: 12:09:06 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00004268: 12:09:22 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 00004268: 12:09:22 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 00004268: 12:09:23 [TUniServerModule]:HTTP Server Stopped.
+WebApp_BPKAD.exe: 00004268: 12:09:23 [TUniGUISessionManager]:Terminating Session manager.
+WebApp_BPKAD.exe: 00004268: 12:09:23 [TUniGUISessionManager]:Stopping Cache Eraser...
+WebApp_BPKAD.exe: 00004268: 12:09:23 [TUniGUISessionManager]:Cache Eraser Stopped.
+WebApp_BPKAD.exe: 00004268: 12:09:23 [TUniGUISessionManager]:Destroying Worker Threads.
+WebApp_BPKAD.exe: 00004268: 12:09:23 [TUniGUISessionManager]:Session manager terminated.
+WebApp_BPKAD.exe: 00004268: 12:09:23 [TUniServerModule]:Server Shutdown Completed.
+WebApp_BPKAD.exe: 00004268: 12:09:23 []:<-------------------------------------------------------------->
+WebApp_BPKAD.exe: 00004268: 12:09:23 [Terminated]:Exit Code: 0
+WebApp_BPKAD.exe: 00001EB0: 12:17:26 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 00001EB0: 12:17:26 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 00001EB0: 12:17:26 [TUniServerModule]:Starting HTTP Server on Port: 80...
+WebApp_BPKAD.exe: 00001EB0: 12:17:26 [TUniServerModule]:HTTP Server Started on Port: 80
+WebApp_BPKAD.exe: 000043A0: 12:17:26 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00001330: 12:17:27 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00004FD8: 12:17:27 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: f5tPra54bE1088D61C8 ) : Addr: $00788A02
+WebApp_BPKAD.exe: 00002160: 12:17:30 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00003774: 12:17:30 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00002178: 12:17:30 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00004E88: 12:17:30 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00003838: 12:17:31 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00003D78: 12:17:34 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00001EB0: 12:18:32 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 00001EB0: 12:18:32 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 00001EB0: 12:18:33 [TUniServerModule]:HTTP Server Stopped.
+WebApp_BPKAD.exe: 00001EB0: 12:18:33 [TUniGUISessionManager]:Terminating Session manager.
+WebApp_BPKAD.exe: 00001EB0: 12:18:33 [TUniGUISessionManager]:Stopping Cache Eraser...
+WebApp_BPKAD.exe: 00001EB0: 12:18:34 [TUniGUISessionManager]:Cache Eraser Stopped.
+WebApp_BPKAD.exe: 00001EB0: 12:18:34 [TUniGUISessionManager]:Destroying Worker Threads.
+WebApp_BPKAD.exe: 00001EB0: 12:18:34 [TUniGUISessionManager]:Session manager terminated.
+WebApp_BPKAD.exe: 00001EB0: 12:18:34 [TUniServerModule]:Server Shutdown Completed.
+WebApp_BPKAD.exe: 00001EB0: 12:18:34 []:<-------------------------------------------------------------->
+WebApp_BPKAD.exe: 00001EB0: 12:18:34 [Terminated]:Exit Code: 0
+WebApp_BPKAD.exe: 00002FC0: 12:19:54 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 00002FC0: 12:19:54 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 00002FC0: 12:19:54 [TUniServerModule]:Starting HTTP Server on Port: 80...
+WebApp_BPKAD.exe: 00002FC0: 12:19:55 [TUniServerModule]:HTTP Server Started on Port: 80
+WebApp_BPKAD.exe: 00003834: 12:19:58 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00002E88: 12:19:58 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 000044C8: 12:19:58 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: YTzMhOBmIs1088D640F ) : Addr: $00788A02
+WebApp_BPKAD.exe: 00003E48: 12:20:00 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00003728: 12:20:00 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00000A50: 12:20:00 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00001994: 12:20:00 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 000047F8: 12:20:00 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00001E20: 12:20:00 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00003F6C: 12:20:00 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00003458: 12:20:00 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00000F4C: 12:20:00 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00003FF0: 12:20:00 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00004178: 12:20:01 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00001EF4: 12:20:01 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00004284: 12:20:01 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 0000065C: 12:20:03 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00001EAC: 12:20:03 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00000DAC: 12:20:03 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00001E9C: 12:20:03 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 0000450C: 12:20:03 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00000230: 12:20:05 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00002348: 12:20:05 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00002FC0: 12:23:43 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 00002FC0: 12:23:43 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 00002FC0: 12:23:44 [TUniServerModule]:HTTP Server Stopped.
+WebApp_BPKAD.exe: 00002FC0: 12:23:44 [TUniGUISessionManager]:Terminating Session manager.
+WebApp_BPKAD.exe: 00002FC0: 12:23:44 [TUniGUISessionManager]:Stopping Cache Eraser...
+WebApp_BPKAD.exe: 00002FC0: 12:23:44 [TUniGUISessionManager]:Cache Eraser Stopped.
+WebApp_BPKAD.exe: 00002FC0: 12:23:44 [TUniGUISessionManager]:Destroying Worker Threads.
+WebApp_BPKAD.exe: 00002FC0: 12:23:44 [TUniGUISessionManager]:Session manager terminated.
+WebApp_BPKAD.exe: 00002FC0: 12:23:44 [TUniServerModule]:Server Shutdown Completed.
+WebApp_BPKAD.exe: 00002FC0: 12:23:44 []:<-------------------------------------------------------------->
+WebApp_BPKAD.exe: 00002FC0: 12:23:44 [Terminated]:Exit Code: 0
+WebApp_BPKAD.exe: 00004630: 12:23:48 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 00004630: 12:23:48 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 00004630: 12:23:48 [TUniServerModule]:Starting HTTP Server on Port: 80...
+WebApp_BPKAD.exe: 00004630: 12:23:48 [TUniServerModule]:HTTP Server Started on Port: 80
+WebApp_BPKAD.exe: 00000E58: 12:23:57 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 000022C8: 12:23:57 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 000046F0: 12:23:57 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 000019B4: 12:23:57 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: aqdroBqpOo1088D64BD ) : Addr: $00788A02
+WebApp_BPKAD.exe: 00001428: 12:23:58 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00001BE0: 12:23:58 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00004974: 12:23:58 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00002EF8: 12:23:58 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00004630: 12:24:26 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 00004630: 12:24:26 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 00004630: 12:24:27 [TUniServerModule]:HTTP Server Stopped.
+WebApp_BPKAD.exe: 00004630: 12:24:27 [TUniGUISessionManager]:Terminating Session manager.
+WebApp_BPKAD.exe: 00004630: 12:24:27 [TUniGUISessionManager]:Stopping Cache Eraser...
+WebApp_BPKAD.exe: 00004630: 12:24:27 [TUniGUISessionManager]:Cache Eraser Stopped.
+WebApp_BPKAD.exe: 00004630: 12:24:27 [TUniGUISessionManager]:Destroying Worker Threads.
+WebApp_BPKAD.exe: 00004630: 12:24:27 [TUniGUISessionManager]:Session manager terminated.
+WebApp_BPKAD.exe: 00004630: 12:24:27 [TUniServerModule]:Server Shutdown Completed.
+WebApp_BPKAD.exe: 00004630: 12:24:27 []:<-------------------------------------------------------------->
+WebApp_BPKAD.exe: 00004630: 12:24:27 [Terminated]:Exit Code: 0
+WebApp_BPKAD.exe: 000023C0: 12:26:25 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 000023C0: 12:26:25 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 000023C0: 12:26:25 [TUniServerModule]:Starting HTTP Server on Port: 80...
+WebApp_BPKAD.exe: 000023C0: 12:26:25 [TUniServerModule]:HTTP Server Started on Port: 80
+WebApp_BPKAD.exe: 00000828: 12:26:28 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00004C9C: 12:26:28 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00004C18: 12:26:28 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: 2OYRK3NNQI1088D65D0 ) : Addr: $00788A02
+WebApp_BPKAD.exe: 000038EC: 12:26:30 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 000018C0: 12:26:30 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 0000424C: 12:26:30 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00004700: 12:26:30 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00004BF0: 12:26:31 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 000023C0: 12:26:44 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 000023C0: 12:26:44 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 000023C0: 12:26:45 [TUniServerModule]:HTTP Server Stopped.
+WebApp_BPKAD.exe: 000023C0: 12:26:45 [TUniGUISessionManager]:Terminating Session manager.
+WebApp_BPKAD.exe: 000023C0: 12:26:45 [TUniGUISessionManager]:Stopping Cache Eraser...
+WebApp_BPKAD.exe: 000023C0: 12:26:45 [TUniGUISessionManager]:Cache Eraser Stopped.
+WebApp_BPKAD.exe: 000023C0: 12:26:45 [TUniGUISessionManager]:Destroying Worker Threads.
+WebApp_BPKAD.exe: 000023C0: 12:26:45 [TUniGUISessionManager]:Session manager terminated.
+WebApp_BPKAD.exe: 000023C0: 12:26:45 [TUniServerModule]:Server Shutdown Completed.
+WebApp_BPKAD.exe: 000023C0: 12:26:45 []:<-------------------------------------------------------------->
+WebApp_BPKAD.exe: 000023C0: 12:26:45 [Terminated]:Exit Code: 0
+WebApp_BPKAD.exe: 00003CE4: 12:30:12 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 00003CE4: 12:30:12 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 00003CE4: 12:30:12 [TUniServerModule]:Starting HTTP Server on Port: 80...
+WebApp_BPKAD.exe: 00003CE4: 12:30:13 [TUniServerModule]:HTTP Server Started on Port: 80
+WebApp_BPKAD.exe: 000023A8: 12:30:18 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 000043DC: 12:30:18 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00001CA4: 12:30:18 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: CKQEoTg7be1088D6680 ) : Addr: $00788A02
+WebApp_BPKAD.exe: 00003E7C: 12:30:20 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00004158: 12:30:20 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 000045F8: 12:30:20 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 0000287C: 12:30:20 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 000024FC: 12:30:21 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00003118: 12:30:22 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00004284: 12:30:22 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00004178: 12:30:22 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00002144: 12:33:19 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Invalid URI: /srs6/serv/urn:publicsanctservices ) : Addr: $00788A02
+WebApp_BPKAD.exe: 00003CE4: 12:36:26 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 00003CE4: 12:36:26 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 00003CE4: 12:36:27 [TUniServerModule]:HTTP Server Stopped.
+WebApp_BPKAD.exe: 00003CE4: 12:36:27 [TUniGUISessionManager]:Terminating Session manager.
+WebApp_BPKAD.exe: 00003CE4: 12:36:27 [TUniGUISessionManager]:Stopping Cache Eraser...
+WebApp_BPKAD.exe: 00003CE4: 12:36:27 [TUniGUISessionManager]:Cache Eraser Stopped.
+WebApp_BPKAD.exe: 00003CE4: 12:36:27 [TUniGUISessionManager]:Destroying Worker Threads.
+WebApp_BPKAD.exe: 00003CE4: 12:36:27 [TUniGUISessionManager]:Session manager terminated.
+WebApp_BPKAD.exe: 00003CE4: 12:36:27 [TUniServerModule]:Server Shutdown Completed.
+WebApp_BPKAD.exe: 00003CE4: 12:36:27 []:<-------------------------------------------------------------->
+WebApp_BPKAD.exe: 00003CE4: 12:36:27 [Terminated]:Exit Code: 0
+WebApp_BPKAD.exe: 000040B4: 12:36:29 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 000040B4: 12:36:29 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 000040B4: 12:36:29 [TUniServerModule]:Starting HTTP Server on Port: 80...
+WebApp_BPKAD.exe: 000040B4: 12:36:29 [TUniServerModule]:HTTP Server Started on Port: 80
+WebApp_BPKAD.exe: 000007D4: 12:36:36 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00004358: 12:36:37 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00001250: 12:36:37 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Session not found: aRwQocFHqB1088D678A ) : Addr: $00788A02
+WebApp_BPKAD.exe: 00002648: 12:36:39 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 000008DC: 12:36:39 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00003F0C: 12:36:39 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00001DBC: 12:36:39 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00004BA4: 12:36:40 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00003A6C: 12:36:41 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00004310: 12:36:44 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 000040B4: 12:37:12 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 000040B4: 12:37:12 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 000040B4: 12:37:13 [TUniServerModule]:HTTP Server Stopped.
+WebApp_BPKAD.exe: 000040B4: 12:37:13 [TUniGUISessionManager]:Terminating Session manager.
+WebApp_BPKAD.exe: 000040B4: 12:37:13 [TUniGUISessionManager]:Stopping Cache Eraser...
+WebApp_BPKAD.exe: 000040B4: 12:37:13 [TUniGUISessionManager]:Cache Eraser Stopped.
+WebApp_BPKAD.exe: 000040B4: 12:37:13 [TUniGUISessionManager]:Destroying Worker Threads.
+WebApp_BPKAD.exe: 000040B4: 12:37:13 [TUniGUISessionManager]:Session manager terminated.
+WebApp_BPKAD.exe: 000040B4: 12:37:13 [TUniServerModule]:Server Shutdown Completed.
+WebApp_BPKAD.exe: 000040B4: 12:37:13 []:<-------------------------------------------------------------->
+WebApp_BPKAD.exe: 000040B4: 12:37:13 [Terminated]:Exit Code: 0
+WebApp_BPKAD.exe: 00002558: 12:46:59 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 00002558: 12:46:59 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 00002558: 12:46:59 [TUniServerModule]:Starting HTTP Server on Port: 80...
+WebApp_BPKAD.exe: 00002558: 12:47:00 [TUniServerModule]:HTTP Server Started on Port: 80
+WebApp_BPKAD.exe: 000045DC: 12:47:06 [Indy]:EIdOSSLUnderlyingCryptoError : Error accepting connection with SSL.
+error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown : Addr: $0076816F
+WebApp_BPKAD.exe: 00002558: 12:47:27 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 00002558: 12:47:27 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 00002558: 12:47:28 [TUniServerModule]:HTTP Server Stopped.
+WebApp_BPKAD.exe: 00002558: 12:47:28 [TUniGUISessionManager]:Terminating Session manager.
+WebApp_BPKAD.exe: 00002558: 12:47:28 [TUniGUISessionManager]:Stopping Cache Eraser...
+WebApp_BPKAD.exe: 00002558: 12:47:28 [TUniGUISessionManager]:Cache Eraser Stopped.
+WebApp_BPKAD.exe: 00002558: 12:47:28 [TUniGUISessionManager]:Destroying Worker Threads.
+WebApp_BPKAD.exe: 00002558: 12:47:28 [TUniGUISessionManager]:Session manager terminated.
+WebApp_BPKAD.exe: 00002558: 12:47:28 [TUniServerModule]:Server Shutdown Completed.
+WebApp_BPKAD.exe: 00002558: 12:47:28 []:<-------------------------------------------------------------->
+WebApp_BPKAD.exe: 00002558: 12:47:28 [Terminated]:Exit Code: 0

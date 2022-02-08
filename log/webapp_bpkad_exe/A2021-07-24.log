@@ -1,0 +1,21 @@
+WebApp_BPKAD.exe: 00002100: 00:53:21 []:>--------------------------------------------------------------<
+WebApp_BPKAD.exe: 00002100: 00:53:21 [TUniServerModule]:Server First Init.
+WebApp_BPKAD.exe: 00002100: 00:53:21 [TUniServerModule]:Global Cache Folder Erased. <34> Files deleted.
+WebApp_BPKAD.exe: 00002100: 00:53:21 [TUniServerModule]:Starting HTTP Server on Port: 80...
+WebApp_BPKAD.exe: 00002100: 00:53:26 [TUniServerModule]:HTTP Server Started on Port: 80
+WebApp_BPKAD.exe: 00001DD4: 00:53:42 [127.0.0.1]:EMSSQLNativeException : [FireDAC][Phys][ODBC][Microsoft][SQL Server Native Client 11.0]Client unable to establish connection because an error was encountered during handshakes before login. Common causes include client attempting to connect to an unsupported version of SQL Server, server too busy to accept new connections or a resource limitation (memory or maximum allowed connections) on the server. : Addr: $008D821A
+WebApp_BPKAD.exe: 00001DD4: 00:53:43 [127.0.0.1]:EUniSessionException : Invalid session or session Timeout. (Invalid URI: /ERROR ) : Addr: $007DACB2
+WebApp_BPKAD.exe: 00002F94: 00:53:46 [127.0.0.1]:EMSSQLNativeException : [FireDAC][Phys][ODBC][Microsoft][SQL Server Native Client 11.0]Client unable to establish connection because an error was encountered during handshakes before login. Common causes include client attempting to connect to an unsupported version of SQL Server, server too busy to accept new connections or a resource limitation (memory or maximum allowed connections) on the server. : Addr: $008D821A
+WebApp_BPKAD.exe: 00002F94: 00:53:58 [127.0.0.1]:EMSSQLNativeException : [FireDAC][Phys][ODBC][Microsoft][SQL Server Native Client 11.0]Client unable to establish connection because an error was encountered during handshakes before login. Common causes include client attempting to connect to an unsupported version of SQL Server, server too busy to accept new connections or a resource limitation (memory or maximum allowed connections) on the server. : Addr: $008D821A
+WebApp_BPKAD.exe: 00002100: 00:54:02 [TUniServerModule]:Shutting Down Server.
+WebApp_BPKAD.exe: 00002100: 00:54:02 [TUniServerModule]:Stopping HTTP Server.
+WebApp_BPKAD.exe: 00002100: 00:54:03 [TUniServerModule]:HTTP Server Stopped.
+WebApp_BPKAD.exe: 00002100: 00:54:03 [TUniGUISessionManager]:Terminating Session manager.
+WebApp_BPKAD.exe: 00002100: 00:54:03 [TUniGUISessionManager]:Stopping Cache Eraser...
+WebApp_BPKAD.exe: 00002100: 00:54:03 [TUniGUISessionManager]:Cache Eraser Stopped.
+WebApp_BPKAD.exe: 00002100: 00:54:03 []:EAccessViolation : Access violation at address 00409E9C in module 'WebApp_BPKAD.exe'. Read of address FFFFFFFD : Addr: $00409E9C
+WebApp_BPKAD.exe: 00002100: 00:54:03 [TUniGUISessionManager]:Destroying Worker Threads.
+WebApp_BPKAD.exe: 00002100: 00:54:03 [TUniGUISessionManager]:Session manager terminated.
+WebApp_BPKAD.exe: 00002100: 00:54:03 [TUniServerModule]:Server Shutdown Completed.
+WebApp_BPKAD.exe: 00002100: 00:54:03 []:<-------------------------------------------------------------->
+WebApp_BPKAD.exe: 00002100: 00:54:03 [Terminated]:Exit Code: 0
