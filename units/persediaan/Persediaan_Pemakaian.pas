@@ -37,7 +37,6 @@ type
     qPemakaianpemohon: TStringField;
     qPemakaiankode_unitkerja: TIntegerField;
     qPemakaiankode_ssh: TStringField;
-    qPemakaianqty: TIntegerField;
     qPemakaianharga_satuan: TCurrencyField;
     qPemakaianprogram_kegiatan: TStringField;
     qPemakaianketerangan: TStringField;
@@ -46,7 +45,6 @@ type
     qPemakaiancreated_user: TIntegerField;
     qPemakaiandeleted: TBooleanField;
     qPemakaiannama_barang: TStringField;
-    qPemakaiantersedia: TIntegerField;
     qUnitkerjaid: TFDAutoIncField;
     qUnitkerjakode: TStringField;
     qUnitkerjabidang: TStringField;
@@ -95,10 +93,12 @@ type
     qProgramKegiatankode_subunit: TStringField;
     qPemakaiantotal: TCurrencyField;
     upTombol: TUniPanel;
-    dbnSSH: TUniDBNavigator;
+    dbnTombol: TUniDBNavigator;
     ubtCetakBA: TUniBitBtn;
     qPemakaiansumber: TStringField;
     qPemakaiankode_skpd: TIntegerField;
+    qPemakaianqty: TFloatField;
+    qPemakaiantersedia: TFloatField;
     procedure UniFormShow(Sender: TObject);
     procedure UniFormClose(Sender: TObject; var Action: TCloseAction);
     procedure udbGridColumnSummaryResult(Column: TUniDBGridColumn;
@@ -141,7 +141,7 @@ implementation
 {$R *.dfm}
 
 uses
-  MainModule, uniGUIApplication, Persediaan_PilihPemakaian;
+  MainModule, uniGUIApplication, Persediaan_PilihPemakaian, Vcl.DBCtrls;
 
 function frmPersediaanPemakaian: TfrmPersediaanPemakaian;
 begin
@@ -152,7 +152,7 @@ end;
 
 procedure TfrmPersediaanPemakaian.cbKodeBASTChange(Sender: TObject);
 begin
-  if cbKOdeBAST.Text = 'BARU' then
+  if (cbKOdeBAST.Text = 'BARU') AND (cbKOdeBAST.Text <> 'SEMUA') then
   begin
     // GET DATA BAST
     qPemakaian.Close;
@@ -168,6 +168,7 @@ begin
     umKeterangan.Text := '-';
     udbgPemakaian.Grouping.Enabled := false;
     ubStatusPagu.Caption := 'Status Pagu';
+    dbnTombol.VisibleButtons := [nbInsert,nbDelete,nbPost,nbCancel];
 
   end else
   if cbKOdeBAST.Text = 'SEMUA' then
@@ -189,6 +190,7 @@ begin
     umKeterangan.Text := qPemakaianketerangan.Value;
     udbgPemakaian.Grouping.Enabled := true;
     ubStatusPagu.Caption := 'Status Pagu';
+    dbnTombol.VisibleButtons := [nbDelete,nbPost,nbCancel];
   end else
   begin
     // GET DATA BAST
@@ -207,6 +209,7 @@ begin
     edPemohon.Text := qPemakaianpemohon.Value;
     umKeterangan.Text := qPemakaianketerangan.Value;
     udbgPemakaian.Grouping.Enabled := false;
+
     // Cek Pagu Anggaran
     if qProgramKegiatan.Active = true then qProgramKegiatan.Close;
     try
@@ -219,6 +222,8 @@ begin
     finally
         qProgramKegiatan.Close;
     end;
+
+    dbnTombol.VisibleButtons := [nbInsert,nbDelete,nbPost,nbCancel];
   end;
 end;
 
@@ -245,7 +250,8 @@ var
 begin
   // add items KodeBast
   SQL := 'SELECT DISTINCT kode_bast FROM db_persediaan.dbo.data_pemakaian ' +
-         'WHERE DATEPART(YEAR,tanggal) =' + IntToStr(UniMainModule.TahunPersediaan);
+         'WHERE DATEPART(YEAR,tanggal) =' + IntToStr(UniMainModule.TahunPersediaan) + ' AND ' +
+         'kode_skpd =' + IntToStr(UniMainModule.UserKodeSKPD);
   try
     Q := TFDQuery.Create(Self);
     Q.Connection := UniMainModule.FDConnection;
@@ -326,41 +332,47 @@ end;
 
 procedure TfrmPersediaanPemakaian.qPemakaianBeforePost(DataSet: TDataSet);
 begin
-  qPemakaiantanggal.Value := dtTanggal.DateTime;
 
-  // get Id UnitKerja
-  try
-    qUnitkerja.ParamByName('kode_subunit').Value := PKode_SubUnit;
-    qUnitkerja.ParamByName('bidang').Value := cbBidang.Text;
-    qUnitkerja.Open;
-  finally
-    qUnitkerja.First;
-    qPemakaiankode_unitkerja.Value := qUnitkerjaid.Value;
-    qPemakaianprogram_kegiatan.AsString := cbProgram.Text;
-    qPemakaiancreated_user.Value := UniMainModule.UserKodeSKPD;
-    qPemakaianketerangan.AsString := umKeterangan.Text;
-    qPemakaianpemohon.Value := edPemohon.Text;
-    qPemakaianpersetujuan.Value := true;
-    qPemakaiancreated_user.Value := UniMainModule.UserId;
-    qPemakaiankode_skpd.Value := UniMainModule.UserKodeSKPD;
+  if (cbKodeBAST.Text = 'BARU') OR (cbKodeBAST.Text <> 'SEMUA') then
+  begin
+    qPemakaiantanggal.Value := dtTanggal.DateTime;
+    // get Id UnitKerja
+    try
+      if qUnitkerja.Active then qUnitkerja.Close;
+      qUnitkerja.ParamByName('kode_subunit').Value := PKode_SubUnit;
+      qUnitkerja.ParamByName('bidang').Value := cbBidang.Text;
+      qUnitkerja.Open;
+    finally
+      qUnitkerja.First;
+      qPemakaiankode_unitkerja.Value := qUnitkerjaid.Value;
+      qPemakaianprogram_kegiatan.AsString := cbProgram.Text;
+      qPemakaiancreated_user.Value := UniMainModule.UserKodeSKPD;
+      qPemakaianketerangan.AsString := umKeterangan.Text;
+      qPemakaianpemohon.Value := edPemohon.Text;
+      qPemakaianpersetujuan.Value := true;
+      qPemakaiancreated_user.Value := UniMainModule.UserId;
+      qPemakaiankode_skpd.Value := UniMainModule.UserKodeSKPD;
 
-    if cbKodeBAST.Text = 'BARU' then
-    // Get KodeBAST Penerimaan
-      try
-        if qBASTPengeluaran.Active = true then qBASTPengeluaran.Close;
-        qBASTPengeluaran.ParamByName('skpd').Value := UniMainModule.qProfileKeterangan.Value;
-        qBASTPengeluaran.ParamByName('tahun').Value := UniMainModule.TahunPersediaan;
-        qBASTPengeluaran.Open;
-      finally
-        qPemakaiankode_bast.Value := qBASTPengeluarannew_bast.Value;
-        cbKodeBAST.Items.Add(qBASTPengeluarannew_bast.Value);
-        cbKodeBAST.Text := qBASTPengeluarannew_bast.Value;
-      end
-    else
-    if cbKodeBAST.Text <> 'SEMUA' then
-      qPemakaiankode_bast.Value := cbKodeBAST.Text;
+      if cbKodeBAST.Text = 'BARU' then
+      // Get KodeBAST Penerimaan
+        try
+          if qBASTPengeluaran.Active = true then qBASTPengeluaran.Close;
+          qBASTPengeluaran.ParamByName('skpd').Value := UniMainModule.qProfileKeterangan.Value;
+          qBASTPengeluaran.ParamByName('tahun').Value := UniMainModule.TahunPersediaan;
+          qBASTPengeluaran.ParamByName('kode_skpd').Value := IntToStr(UniMainModule.UserKodeSKPD);
+          qBASTPengeluaran.Open;
+        finally
+          qPemakaiankode_bast.Value := qBASTPengeluarannew_bast.Value;
+          cbKodeBAST.Items.Add(qBASTPengeluarannew_bast.Value);
+          cbKodeBAST.Text := qBASTPengeluarannew_bast.Value;
+        end
+      else
+      if cbKodeBAST.Text <> 'SEMUA' then
+        qPemakaiankode_bast.Value := cbKodeBAST.Text;
 
-    qUnitkerja.Close;
+      qUnitkerja.Close;
+    end;
+
   end;
 
 end;
@@ -502,6 +514,7 @@ procedure TfrmPersediaanPemakaian.ubwPilihClick(Sender: TObject);
 begin
   with ufrmPersediaanPilihPemakaian do
   begin
+    //ShowMask('Loading...');
     if not (qPemakaian.State in [dsEdit, dsInsert]) then qPemakaian.Edit;
     ufrmPersediaanPilihPemakaian.qPilihPemakaian.ParamByName('kode_unit').Value := PKode_SubUnit;
     ufrmPersediaanPilihPemakaian.qPilihPemakaian.ParamByName('bidang').Value := cbBidang.Text;
@@ -517,9 +530,10 @@ begin
   if SameText(cbKodeBAST.Text, 'SEMUA') then kd_bast := '%%' else kd_bast := cbKodeBAST.Text;
 
   // Open Cetak BAST
-  UniSession.AddJS('window.open('+'''https://laporan:Bpkad123@bpkad.hulusungaitengahkab.go.id:446/'+
+  UniSession.AddJS('window.open('+'''https://laporan:bpkad.123@bpkad.hulusungaitengahkab.go.id:444/'+
                    'ReportServer/Pages/ReportViewer.aspx?%2fReports_Persediaan%2fBAST_Pengeluaran&rc:Parameters=Collapsed'+
                    '&tahun='+IntToStr(UniMainModule.TahunPersediaan)+
+                   '&kode_skpd='+UniMainModule.qProfileKode_Subunit.Value+
                    '&kode_bast='+kd_bast+
                    ''', ''_blank'', ''toolbar=no,location=no,status=yes,menubar=no,directories=no,scrollbars=yes,resizable=yes,width=1150,height=650'');'); // to open a new window/tab﻿
 

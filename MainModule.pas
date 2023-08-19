@@ -84,7 +84,7 @@ implementation
 {$R *.dfm}
 
 uses
-  UniGUIVars, ServerModule, uniGUIApplication;
+  UniGUIVars, ServerModule, uniGUIApplication, Vcl.Forms;
 
 function UniMainModule: TUniMainModule;
 begin
@@ -109,19 +109,6 @@ begin
   for i := 0 to Length(RStr)-1 do begin
     Result:= Result + IntToHex(RStrB[i], 2);
   end;
-end;
-
-procedure TUniMainModule.NotifSaveDB(DInfo: String; DType: Integer);
-begin
-  case DType of
-  0 : UniFSToast.Success(DInfo,'Berhasil Disimpan');
-  1 : UniFSToast.Warning(DInfo,'Dibatalkan');
-  2 : UniFSToast.Error(DInfo,'Berhasil Dihapus');
-  end;
-end;
-
-procedure TUniMainModule.PromptDialogBox(pTitle, pDesc, pKet, pValue: String);
-begin
 end;
 
 function TUniMainModule.DecryptStr(const S: String; Key: Word): String;
@@ -151,41 +138,54 @@ begin
 end;
 //===================== ============== ======================
 
+procedure TUniMainModule.NotifSaveDB(DInfo: String; DType: Integer);
+begin
+  case DType of
+  0 : UniFSToast.Success(DInfo,'Berhasil Disimpan');
+  1 : UniFSToast.Warning(DInfo,'Dibatalkan');
+  2 : UniFSToast.Error(DInfo,'Berhasil Dihapus');
+  end;
+end;
+
+procedure TUniMainModule.PromptDialogBox(pTitle, pDesc, pKet, pValue: String);
+begin
+end;
+
 
 procedure TUniMainModule.ReadConfigDB(NamaFile: String);
 var
   oParams: TStrings;
   M_Error: String;
 begin
-  TitleAppA := 'Badan Pengelola Keuagan dan Aset Daerah';
-  TitleAppS := 'Kabupaten Hulu Sungai Tengah';
-  TitleLogin := 'Silahkan pilih mode login';
-  TitleVersion := 'ver: 1.0.5.141';
-  PoweredBy := 'Created By Tim SysDev BPKAD HST';
-  TitleLogo := 'logoBPKAD.png';
-  DriverID := 'MSSQL';
-  Server := 'localhost';
-  OSAuthent := 'No';
-  MARS := 'yes';
-  Workstation := 'server_bpkad';
-  ApplicationName := 'webapp_bpkad';
+//  TitleAppA := 'Badan Pengelola Keuagan dan Aset Daerah';
+//  TitleAppS := 'Kabupaten Hulu Sungai Tengah';
+//  TitleLogin := 'Silahkan pilih mode login';
+//  TitleVersion := 'ver: 1.0.6.141';
+//  PoweredBy := 'Created By Tim SysDev BPKAD HST';
+//  TitleLogo := 'logoBPKAD.png';
+//  DriverID := 'MSSQL';
+//  Server := 'bpkad.hulusungaitengahkab.go.id';
+//  OSAuthent := 'No';
+//  MARS := 'yes';
+//  Workstation := 'server_bpkad';
+//  ApplicationName := 'webapp_bpkad';
 
    try
     // Connection Database
     //================================
     //Connection definition parameters
     //================================
-    ConfigDB := Tinifile.Create(extractfilepath(GetModuleName(HInstance)) + NamaFile);
+    ConfigDB := Tinifile.Create(extractfilepath(paramstr(0)) + NamaFile);
     FDManager.ConnectionDefs.Clear;
 
     try
       // Load Config App
-//      TitleAppA     := ConfigDB.ReadString('APP_CONF', 'TitleAppA', 'ERROR');
-//      TitleAppS     := ConfigDB.ReadString('APP_CONF', 'TitleAppS', 'ERROR');
-//      TitleLogo     := ConfigDB.ReadString('APP_CONF', 'TitleLogo', 'ERROR');
-//      TitleLogin    := ConfigDB.ReadString('APP_CONF', 'TitleLogin', 'ERROR');
-//      TitleVersion  := ConfigDB.ReadString('APP_CONF', 'TitleVersion', 'ERROR');
-//      PoweredBy     := ConfigDB.ReadString('APP_CONF', 'PoweredBy', 'ERROR');
+      TitleAppA     := ConfigDB.ReadString('APP_CONF', 'TitleAppA', 'ERROR');
+      TitleAppS     := ConfigDB.ReadString('APP_CONF', 'TitleAppS', 'ERROR');
+      TitleLogo     := ConfigDB.ReadString('APP_CONF', 'TitleLogo', 'ERROR');
+      TitleLogin    := ConfigDB.ReadString('APP_CONF', 'TitleLogin', 'ERROR');
+      TitleVersion  := ConfigDB.ReadString('APP_CONF', 'TitleVersion', 'ERROR');
+      PoweredBy     := ConfigDB.ReadString('APP_CONF', 'PoweredBy', 'ERROR');
 
       // Load Config Database
       DriverID        := ConfigDB.ReadString('DATABASE_CONF', 'DriverID', 'ERROR');
@@ -201,15 +201,15 @@ begin
       with FDConnection do
       begin
         oParams := TStringList.Create;
-        oParams.Add(DriverID);
-        oParams.Add(Server);
-        oParams.Add(OSAuthent);
-        oParams.Add(UserName);
-        oParams.Add(Password);
-        oParams.Add(Database);
-        oParams.Add(MARS);
-        oParams.Add(Workstation);
-        oParams.Add(ApplicationName);
+        oParams.Add('DriverID='+DriverID);
+        oParams.Add('Server='+Server);
+        oParams.Add('OSAuthent='+OSAuthent);
+        oParams.Add('User_Name='+UserName);
+        oParams.Add('Password='+Password);
+        oParams.Add('Database='+Database);
+        oParams.Add('MARS='+MARS);
+        oParams.Add('Workstation='+Workstation);
+        oParams.Add('ApplicationName='+ApplicationName);
       end;
 
 
@@ -228,7 +228,7 @@ begin
 
     except
       on E : Exception do begin
-      ConfigDB.Free;
+      //ConfigDB.Free;
       M_Error:= E.Message;
      end;
 
@@ -258,7 +258,7 @@ begin
   try
     ReadConfigDB('FDConnection.ini')
   finally
-    //FDConnection.Connected := true
+    FDConnection.Connected := true
 
   end;
 

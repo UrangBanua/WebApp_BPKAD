@@ -16,7 +16,7 @@ type
     UniLabel_Powered: TUniLabel;
     unfRekapAbsen: TUniFSButton;
     unfDetailAbsen: TUniFSButton;
-    unfRoster: TUniFSButton;
+    unfLembur: TUniFSButton;
     unfKepegaiwaian: TUniFSButton;
     procedure unfRekapAbsenClick(Sender: TObject);
     procedure unfDetailAbsenClick(Sender: TObject);

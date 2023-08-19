@@ -8,7 +8,6 @@ program
   WebApp_BPKAD;
 
 uses
-  //EAppUniGUI, // EurekaLog
   uniGUIISAPI,
   Forms,
   ServerModule in 'ServerModule.pas' {UniServerModule: TUniGUIServerModule},
@@ -54,6 +53,7 @@ begin
   ReportMemoryLeaksOnShutdown := True;
   Application.Initialize;
   TUniServerModule.Create(Application);
+  Application.Title := 'WebApp_BPKAD';
   Application.Run;
 {$endif}
 end.

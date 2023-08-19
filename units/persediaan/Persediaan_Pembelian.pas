@@ -44,7 +44,6 @@ type
     qPembelianid: TFDAutoIncField;
     qPembeliantanggal: TDateField;
     qPembeliankode_ssh: TStringField;
-    qPembelianqty: TIntegerField;
     qPembelianharga_satuan: TCurrencyField;
     qPembeliansupplier: TStringField;
     qPembelianprogram_kegiatan: TStringField;
@@ -77,7 +76,6 @@ type
     qPemakaianpemohon: TStringField;
     qPemakaiankode_unitkerja: TIntegerField;
     qPemakaiankode_ssh: TStringField;
-    qPemakaianqty: TIntegerField;
     qPemakaianharga_satuan: TCurrencyField;
     qPemakaianprogram_kegiatan: TStringField;
     qPemakaianketerangan: TStringField;
@@ -114,14 +112,16 @@ type
     qSKPDId: TFDAutoIncField;
     qSKPDKode_Subunit: TStringField;
     qSKPDNama_Subunit: TStringField;
-    qPemakaiantersedia: TIntegerField;
     upTombol: TUniPanel;
-    dbnSSH: TUniDBNavigator;
+    dbnTombol: TUniDBNavigator;
     ubtCetakBA: TUniBitBtn;
     dtFaktur: TUniDateTimePicker;
     qPembeliankode_skpd: TIntegerField;
     qPemakaiansumber: TStringField;
     qPemakaiankode_skpd: TIntegerField;
+    qPembelianqty: TFloatField;
+    qPemakaianqty: TFloatField;
+    qPemakaiantersedia: TFloatField;
     procedure UniFormShow(Sender: TObject);
     procedure UniFormClose(Sender: TObject; var Action: TCloseAction);
     procedure qPembelianAfterCancel(DataSet: TDataSet);
@@ -143,6 +143,7 @@ type
       Attribs: TUniCellAttribs; var Result: string);
     procedure ubtCetakBAClick(Sender: TObject);
     procedure qPembelianBeforeInsert(DataSet: TDataSet);
+    procedure ubStatusPaguClick(Sender: TObject);
   private
     var
       PInsertStat : boolean;
@@ -163,7 +164,7 @@ implementation
 {$R *.dfm}
 
 uses
-  MainModule, uniGUIApplication, Persediaan_PilihPembelian;
+  MainModule, uniGUIApplication, Persediaan_PilihPembelian, Vcl.DBCtrls;
 
 function frmPersediaanPembelian: TfrmPersediaanPembelian;
 begin
@@ -172,7 +173,7 @@ end;
 
 procedure TfrmPersediaanPembelian.cbKodeBASTChange(Sender: TObject);
 begin
-  if cbKOdeBAST.Text = 'BARU' then
+  if (cbKOdeBAST.Text = 'BARU') AND (cbKOdeBAST.Text <> 'SEMUA') then
   begin
     // GET DATA BAST
     qPembelian.Close;
@@ -191,6 +192,7 @@ begin
     umKeterangan.Text := '-';
     udbgPmbelian.Grouping.Enabled := false;
     ubStatusPagu.Caption := 'Status Pagu';
+    dbnTombol.VisibleButtons := [nbInsert,nbDelete,nbPost,nbCancel];
 
   end else
   if cbKOdeBAST.Text = 'SEMUA' then
@@ -201,6 +203,11 @@ begin
     qPembelian.ParamByName('kode_skpd').Value := UniMainModule.UserKodeSKPD;
     qPembelian.ParamByName('kode_bast').Value := '%%';
     qPembelian.Open;
+
+//    ShowMessage('Param tahun=' + qPembelian.ParamByName('tahun').AsString +
+//                ', kode_skpd=' + qPembelian.ParamByName('kode_skpd').AsString +
+//                ', kode_bast=' + qPembelian.ParamByName('kode_bast').AsString);
+
     dtTanggal.Enabled := false;
     dtFaktur.Enabled := false;
     cbBidang.Enabled := false;
@@ -208,6 +215,7 @@ begin
     umKeterangan.Enabled := false;
     udbgPmbelian.Grouping.Enabled := true;
     ubStatusPagu.Caption := 'Status Pagu';
+    dbnTombol.VisibleButtons := [nbDelete,nbPost,nbCancel];
   end else
   begin
     // GET DATA BAST
@@ -216,6 +224,11 @@ begin
     qPembelian.ParamByName('kode_skpd').Value := UniMainModule.UserKodeSKPD;
     qPembelian.ParamByName('kode_bast').Value := cbKodeBAST.Text;
     qPembelian.Open;
+
+//    ShowMessage('Param tahun=' + qPembelian.ParamByName('tahun').AsString +
+//                ', kode_skpd=' + qPembelian.ParamByName('kode_skpd').AsString +
+//                ', kode_bast=' + qPembelian.ParamByName('kode_bast').AsString);
+
     dtTanggal.Enabled := true;
     dtFaktur.Enabled := true;
     cbBidang.Enabled := true;
@@ -227,6 +240,7 @@ begin
     cbProgram.Text := qPembelianprogram_kegiatan.Value;
     umKeterangan.Text := qPembelianketerangan.Value;
     udbgPmbelian.Grouping.Enabled := false;
+
     // Cek Pagu Anggaran
     if qProgramKegiatan.Active = true then qProgramKegiatan.Close;
     try
@@ -239,6 +253,8 @@ begin
     finally
         qProgramKegiatan.Close;
     end;
+
+    dbnTombol.VisibleButtons := [nbInsert,nbDelete,nbPost,nbCancel];
   end;
 end;
 
@@ -265,7 +281,8 @@ var
 begin
   // add items KodeBast
   SQL := 'SELECT DISTINCT kode_bast FROM db_persediaan.dbo.data_pembelian ' +
-         'WHERE DATEPART(YEAR,tanggal) =' + IntToStr(UniMainModule.TahunPersediaan);
+         'WHERE DATEPART(YEAR,tanggal) =' + IntToStr(UniMainModule.TahunPersediaan) + ' AND ' +
+         'kode_skpd =' + IntToStr(UniMainModule.UserKodeSKPD);
   try
     Q := TFDQuery.Create(Self);
     Q.Connection := UniMainModule.FDConnection;
@@ -348,40 +365,45 @@ end;
 procedure TfrmPersediaanPembelian.qPembelianBeforePost(DataSet: TDataSet);
 begin
 
-  qPembelianTanggal.Value := dtTanggal.DateTime;
+  if (cbKodeBAST.Text = 'BARU') OR (cbKodeBAST.Text <> 'SEMUA') then
+  begin
+    qPembelianTanggal.Value := dtTanggal.DateTime;
 
-  // get Id UnitKerja
-  try
-    if qUnitkerja.Active then qUnitkerja.Close;
-    qUnitkerja.ParamByName('kode_subunit').Value := PKode_SubUnit;
-    qUnitkerja.ParamByName('bidang').Value := cbBidang.Text;
-    qUnitkerja.Open;
-  finally
-    qUnitkerja.First;
-    qPembelianKode_UnitKerja.Value := qUnitkerjaId.Value;
-    qPembelianProgram_Kegiatan.AsString := cbProgram.Text;
-    qPembelianCreated_User.Value := UniMainmodule.UserKodeSKPD;
-    qPembelianCreated_At.AsDateTime := dtTanggal.DateTime;
-    qPembelianKeterangan.AsString := umKeterangan.Text;
-    qPembeliankode_skpd.Value := UniMainModule.UserKodeSKPD;
+    // get Id UnitKerja
+    try
+      if qUnitkerja.Active then qUnitkerja.Close;
+      qUnitkerja.ParamByName('kode_subunit').Value := PKode_SubUnit;
+      qUnitkerja.ParamByName('bidang').Value := cbBidang.Text;
+      qUnitkerja.Open;
+    finally
+      qUnitkerja.First;
+      qPembelianKode_UnitKerja.Value := qUnitkerjaId.Value;
+      qPembelianProgram_Kegiatan.AsString := cbProgram.Text;
+      qPembelianCreated_User.Value := UniMainmodule.UserKodeSKPD;
+      qPembelianCreated_At.AsDateTime := dtTanggal.DateTime;
+      qPembelianKeterangan.AsString := umKeterangan.Text;
+      qPembeliankode_skpd.Value := UniMainModule.UserKodeSKPD;
 
-    if cbKodeBAST.Text = 'BARU' then
-    // Get KodeBAST Penerimaan
-      try
-        if qBASTPenerimaan.Active = true then qBASTPenerimaan.Close;
-        qBASTPenerimaan.ParamByName('skpd').Value := UniMainModule.qProfileKeterangan.Value;
-        qBASTPenerimaan.ParamByName('tahun').Value := UniMainModule.TahunPersediaan;
-        qBASTPenerimaan.Open;
-      finally
-        qPembeliankode_bast.Value := qBASTPenerimaannew_bast.Value;
-        cbKodeBAST.Items.Add(qBASTPenerimaannew_bast.Value);
-        cbKodeBAST.Text := qBASTPenerimaannew_bast.Value;
-      end
-    else
-    if cbKodeBAST.Text <> 'SEMUA' then
-      qPembeliankode_bast.Value := cbKodeBAST.Text;
+      if cbKodeBAST.Text = 'BARU' then
+      // Get KodeBAST Penerimaan
+        try
+          if qBASTPenerimaan.Active = true then qBASTPenerimaan.Close;
+          qBASTPenerimaan.ParamByName('skpd').Value := UniMainModule.qProfileKeterangan.Value;
+          qBASTPenerimaan.ParamByName('tahun').Value := UniMainModule.TahunPersediaan;
+          qBASTPenerimaan.ParamByName('kode_skpd').Value := IntToStr(UniMainModule.UserKodeSKPD);
+          qBASTPenerimaan.Open;
+        finally
+          qPembeliankode_bast.Value := qBASTPenerimaannew_bast.Value;
+          cbKodeBAST.Items.Add(qBASTPenerimaannew_bast.Value);
+          cbKodeBAST.Text := qBASTPenerimaannew_bast.Value;
+        end
+      else
+      if cbKodeBAST.Text <> 'SEMUA' then
+        qPembeliankode_bast.Value := cbKodeBAST.Text;
 
-    qUnitkerja.Close;
+      qUnitkerja.Close;
+    end;
+
   end;
 
 end;
@@ -439,6 +461,13 @@ begin
 
 end;
 
+procedure TfrmPersediaanPembelian.ubStatusPaguClick(Sender: TObject);
+begin
+  //
+  Sleep(3000);
+
+end;
+
 procedure TfrmPersediaanPembelian.ubtCetakBAClick(Sender: TObject);
 var
   kd_bast : String;
@@ -446,9 +475,10 @@ begin
   if SameText(cbKodeBAST.Text, 'SEMUA') then kd_bast := '%%' else kd_bast := cbKodeBAST.Text;
 
   // Open Cetak BAST
-  UniSession.AddJS('window.open('+'''https://laporan:Bpkad123@bpkad.hulusungaitengahkab.go.id:446/'+
+  UniSession.AddJS('window.open('+'''https://laporan:bpkad.123@bpkad.hulusungaitengahkab.go.id:444/'+
                    'ReportServer/Pages/ReportViewer.aspx?%2fReports_Persediaan%2fBAST_Penerimaan&rc:Parameters=Collapsed'+
                    '&tahun='+IntToStr(UniMainModule.TahunPersediaan)+
+                   '&kode_skpd='+UniMainModule.qProfileKode_Subunit.Value+
                    '&kode_bast='+kd_bast+
                    ''', ''_blank'', ''toolbar=no,location=no,status=yes,menubar=no,directories=no,scrollbars=yes,resizable=yes,width=1150,height=650'');'); // to open a new window/tab﻿
 
@@ -463,7 +493,6 @@ begin
     if not (qPembelian.State in [dsEdit, dsInsert]) then qPembelian.Edit;
     ShowModal(PilihBarang);
   end;
-
 end;
 
 procedure TfrmPersediaanPembelian.udbgPmbelianColumnSort(Column: TUniDBGridColumn;

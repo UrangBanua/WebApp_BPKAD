@@ -9,6 +9,10 @@ object frmPersediaanPengaturan: TfrmPersediaanPengaturan
   OldCreateOrder = False
   OnClose = UniFormClose
   MonitoredKeys.Keys = <>
+  ScreenMask.Enabled = True
+  ScreenMask.WaitData = True
+  ScreenMask.Message = 'Memuat Data . . .'
+  ScreenMask.Target = Owner
   PixelsPerInch = 96
   TextHeight = 13
   object upTop: TUniPanel
@@ -189,9 +193,16 @@ object frmPersediaanPengaturan: TfrmPersediaanPengaturan
             Width = 144
           end
           item
+            FieldName = 'Tahun'
+            Title.Alignment = taCenter
+            Title.Caption = 'Tahun'
+            Title.Font.Style = [fsBold]
+            Width = 64
+          end
+          item
             FieldName = 'update_at'
             Title.Alignment = taCenter
-            Title.Caption = 'update_at'
+            Title.Caption = 'Update_at'
             Title.Font.Style = [fsBold]
             Width = 123
             ReadOnly = True
@@ -279,8 +290,7 @@ object frmPersediaanPengaturan: TfrmPersediaanPengaturan
       Caption = 'upSALDO'
       CollapseDirection = cdTop
       ScrollHeight = 668
-      ScrollWidth = 682
-      ScrollX = 32
+      ScrollWidth = 650
       object dbgSALDO: TUniDBGrid
         Left = 1
         Top = 1
@@ -314,22 +324,20 @@ object frmPersediaanPengaturan: TfrmPersediaanPengaturan
             Width = 31
           end
           item
-            FieldName = 'tahun'
-            Filtering.ChangeDelay = 300
-            Title.Alignment = taCenter
-            Title.Caption = 'Tahun'
-            Title.Font.Style = [fsBold]
-            Width = 53
-            ReadOnly = True
-          end
-          item
             FieldName = 'nama_bidang'
             Filtering.ChangeDelay = 300
             Title.Alignment = taCenter
             Title.Caption = 'Bidang'
             Title.Font.Style = [fsBold]
-            Width = 102
+            Width = 96
             Sortable = True
+          end
+          item
+            FieldName = 'supplier'
+            Title.Alignment = taCenter
+            Title.Caption = 'Kode Rek'
+            Title.Font.Style = [fsBold]
+            Width = 94
           end
           item
             ShowToolTip = True
@@ -338,7 +346,7 @@ object frmPersediaanPengaturan: TfrmPersediaanPengaturan
             Title.Alignment = taCenter
             Title.Caption = 'Nama Barang'
             Title.Font.Style = [fsBold]
-            Width = 119
+            Width = 108
             ForceStringFormat = True
             ReadOnly = True
           end
@@ -347,7 +355,7 @@ object frmPersediaanPengaturan: TfrmPersediaanPengaturan
             Title.Alignment = taCenter
             Title.Caption = 'Satuan'
             Title.Font.Style = [fsBold]
-            Width = 51
+            Width = 49
             ReadOnly = True
           end
           item
@@ -355,7 +363,7 @@ object frmPersediaanPengaturan: TfrmPersediaanPengaturan
             Title.Alignment = taCenter
             Title.Caption = 'Qty'
             Title.Font.Style = [fsBold]
-            Width = 34
+            Width = 45
             ShowSummary = True
           end
           item
@@ -363,7 +371,7 @@ object frmPersediaanPengaturan: TfrmPersediaanPengaturan
             Title.Alignment = taCenter
             Title.Caption = 'Harga Satuan'
             Title.Font.Style = [fsBold]
-            Width = 91
+            Width = 85
           end
           item
             FieldName = 'total'
@@ -836,10 +844,9 @@ object frmPersediaanPengaturan: TfrmPersediaanPengaturan
     AfterDelete = qSSHAfterDelete
     Connection = UniMainModule.FDConnection
     SQL.Strings = (
-      'SELECT * FROM db_persediaan.dbo.data_ssh'
+      'SELECT * FROM db_persediaan.dbo.vw_data_ssh'
       'WHERE'
       'tahun =:tahun AND '
-      'kode LIKE '#39'1.1.7.%'#39' AND'
       'kode LIKE :kode AND'
       'nama_kel LIKE :nama_kel  AND'
       'nama LIKE :nama AND'
@@ -933,6 +940,9 @@ object frmPersediaanPengaturan: TfrmPersediaanPengaturan
     end
     object qSSHupdated_user: TIntegerField
       FieldName = 'updated_user'
+    end
+    object qSSHTahun: TIntegerField
+      FieldName = 'Tahun'
     end
   end
   object dsSSH: TDataSource
@@ -1096,11 +1106,6 @@ object frmPersediaanPengaturan: TfrmPersediaanPengaturan
       Required = True
       Size = 30
     end
-    object qSALDOqty: TIntegerField
-      FieldName = 'qty'
-      Origin = 'qty'
-      Required = True
-    end
     object qSALDOharga_satuan: TCurrencyField
       FieldName = 'harga_satuan'
       Origin = 'harga_satuan'
@@ -1165,6 +1170,11 @@ object frmPersediaanPengaturan: TfrmPersediaanPengaturan
     object qSALDOkode_skpd: TIntegerField
       FieldName = 'kode_skpd'
       Origin = 'kode_skpd'
+      Required = True
+    end
+    object qSALDOqty: TFloatField
+      FieldName = 'qty'
+      Origin = 'qty'
       Required = True
     end
   end

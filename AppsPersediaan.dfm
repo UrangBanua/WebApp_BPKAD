@@ -44,6 +44,9 @@ object frmAppsPersediaan: TfrmAppsPersediaan
         Font.Name = 'Roboto'
         TabOrder = 1
         IconAlign = iaBottom
+        ScreenMask.Enabled = True
+        ScreenMask.WaitData = True
+        ScreenMask.Target = Owner
         ImageIndex = 17
         OnClick = unfStokBarangClick
       end
@@ -66,6 +69,9 @@ object frmAppsPersediaan: TfrmAppsPersediaan
         Font.Name = 'Roboto'
         TabOrder = 2
         IconAlign = iaBottom
+        ScreenMask.Enabled = True
+        ScreenMask.WaitData = True
+        ScreenMask.Target = Owner
         ImageIndex = 18
         OnClick = unfPembelianClick
       end
@@ -88,6 +94,9 @@ object frmAppsPersediaan: TfrmAppsPersediaan
         Font.Name = 'Roboto'
         TabOrder = 3
         IconAlign = iaBottom
+        ScreenMask.Enabled = True
+        ScreenMask.WaitData = True
+        ScreenMask.Target = Owner
         ImageIndex = 19
         OnClick = unfPemakaianClick
       end
@@ -172,6 +181,9 @@ object frmAppsPersediaan: TfrmAppsPersediaan
         'GRAFIK PERSEDIAAN')
       Legend.Font.Height = -8
       LayoutConfig.BodyPadding = '10'
+      ScreenMask.WaitData = True
+      ScreenMask.ShowMessage = False
+      ScreenMask.Target = uChartStokBarang
       Shadow = False
       TitleAlign = taCenter
       object ubsPersediaan: TUniBarSeries
@@ -227,6 +239,7 @@ object frmAppsPersediaan: TfrmAppsPersediaan
         Font.Height = -15
         Font.Name = 'Roboto'
         TabOrder = 1
+        ScreenMask.Target = Owner
         Images = UniMainModule.imgButton
         ImageIndex = 2
         OnClick = ubtPersediaanClick
@@ -249,6 +262,7 @@ object frmAppsPersediaan: TfrmAppsPersediaan
         Font.Height = -15
         Font.Name = 'Roboto'
         TabOrder = 2
+        ScreenMask.Target = Owner
         Images = UniMainModule.imgButton
         ImageIndex = 3
         OnClick = ubtSaldoClick
@@ -271,6 +285,7 @@ object frmAppsPersediaan: TfrmAppsPersediaan
         Font.Height = -15
         Font.Name = 'Roboto'
         TabOrder = 3
+        ScreenMask.Target = Owner
         Images = UniMainModule.imgButton
         ImageIndex = 3
         OnClick = ubtTransaksiClick
@@ -283,6 +298,9 @@ object frmAppsPersediaan: TfrmAppsPersediaan
       Hint = ''
       Text = 'ucbUnitKerja'
       TabOrder = 3
+      ScreenMask.Enabled = True
+      ScreenMask.WaitData = True
+      ScreenMask.Target = uChartStokBarang
       FieldLabel = 'Bidang / Bagian'
       FieldLabelWidth = 60
       IconItems = <>
@@ -299,6 +317,9 @@ object frmAppsPersediaan: TfrmAppsPersediaan
         'Harga')
       ItemIndex = 0
       TabOrder = 4
+      ScreenMask.Enabled = True
+      ScreenMask.WaitData = True
+      ScreenMask.Target = uChartStokBarang
       FieldLabel = 'Satuan'
       FieldLabelWidth = 50
       IconItems = <>
@@ -344,8 +365,8 @@ object frmAppsPersediaan: TfrmAppsPersediaan
         '                          GROUP BY DATEPART(YEAR, tanggal), kode' +
         '_ssh, kode_unitkerja, program_kegiatan, sumber) AS A INNER JOIN'
       
-        '                         db_persediaan.dbo.data_ssh AS B ON A.ta' +
-        'hun = B.tahun AND A.kode_ssh = B.kode INNER JOIN'
+        '                         db_persediaan.dbo.vw_data_ssh AS B ON A' +
+        '.tahun = B.tahun AND A.kode_ssh = B.kode INNER JOIN'
       
         '                         db_persediaan.dbo.data_unitkerja AS D O' +
         'N A.kode_unitkerja = D.id INNER JOIN'
@@ -413,24 +434,24 @@ object frmAppsPersediaan: TfrmAppsPersediaan
       Origin = 'spek'
       Size = 80
     end
-    object qStokBarangpenerimaan: TIntegerField
+    object qStokBarangharga_satuan: TCurrencyField
+      FieldName = 'harga_satuan'
+      Origin = 'harga_satuan'
+      ReadOnly = True
+    end
+    object qStokBarangpenerimaan: TFloatField
       FieldName = 'penerimaan'
       Origin = 'penerimaan'
       ReadOnly = True
     end
-    object qStokBarangpengeluaran: TIntegerField
+    object qStokBarangpengeluaran: TFloatField
       FieldName = 'pengeluaran'
       Origin = 'pengeluaran'
       ReadOnly = True
     end
-    object qStokBarangtersedia: TIntegerField
+    object qStokBarangtersedia: TFloatField
       FieldName = 'tersedia'
       Origin = 'tersedia'
-      ReadOnly = True
-    end
-    object qStokBarangharga_satuan: TCurrencyField
-      FieldName = 'harga_satuan'
-      Origin = 'harga_satuan'
       ReadOnly = True
     end
   end

@@ -1352,15 +1352,13 @@ object UniMainModule: TUniMainModule
   end
   object FDConnection: TFDConnection
     Params.Strings = (
-      'Server=localhost'
-      'User_Name=bpkad_hst'
-      'Password=bpkad_Ak'
-      'ApplicationName=webapp_bpkad'
-      'Workstation=server_bpkad'
-      'MARS=yes'
-      'Database=webapp_bpkad'
-      'OSAuthent=No'
+      'Database=webapp_BPKAD'
+      'User_Name=user_dev'
+      'Password=SQLP@ssw0rd'
+      'Server=bpkad.hulusungaitengahkab.go.id'
       'DriverID=MSSQL')
+    Connected = True
+    LoginPrompt = False
     Left = 32
     Top = 24
   end

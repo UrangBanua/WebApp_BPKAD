@@ -39,7 +39,6 @@ type
     FDQueryLogin: TFDQuery;
     UniFSConfirm: TUniFSConfirm;
     uhtmlTags: TUniHTMLMemo;
-    procedure edPasswordKeyPress(Sender: TObject; var Key: Char);
     procedure UniButton_LoginClick(Sender: TObject);
     procedure UniLoginFormCreate(Sender: TObject);
     procedure UniCB_ModeLoginChange(Sender: TObject);
@@ -88,12 +87,6 @@ begin
     UniButton_Login.Click;
 end;
 
-procedure TfrmLogin.edPasswordKeyPress(Sender: TObject; var Key: Char);
-begin
-  //if key=#13 then
-  //  UniButton_Login.ExecuteAction(nil);
-end;
-
 procedure TfrmLogin.UniButton_LoginClick(Sender: TObject);
 begin
   if UniCB_ModeLogin.ItemIndex = 0 then
@@ -114,9 +107,10 @@ begin
         UniMainModule.UserOS := UniApplication.ClientInfoRec.OSType;
         UniMainModule.BrowserType := UniApplication.ClientInfoRec.BrowserType;
         UniMainModule.BrowserVersion := UniApplication.ClientInfoRec.BrowserVersion;
-        UniMainModule.UserMode := UniApplication.Parameters.Values['mode'];
+        //UniMainModule.UserMode := UniApplication.Parameters.Values['mode'];
+        UniMainModule.UserMode := UniCB_ModeLogin.Text;
 
-        if UniApplication.Parameters.Values['mode'] <> 'publik' then
+        if UniCB_ModeLogin.Text <> 'publik' then
         begin
           UniMainModule.UniSweetAlert.Title := UniCB_ModeLogin.Text;
           UniMainModule.UniSweetAlert.AlertType := atSuccess;
@@ -155,7 +149,8 @@ begin
              UniMainModule.UserOS := UniApplication.ClientInfoRec.OSType;
              UniMainModule.BrowserType := UniApplication.ClientInfoRec.BrowserType;
              UniMainModule.BrowserVersion := UniApplication.ClientInfoRec.BrowserVersion;
-             UniMainModule.UserMode := UniApplication.Parameters.Values['mode'];
+             //UniMainModule.UserMode := UniApplication.Parameters.Values['mode'];
+             UniMainModule.UserMode := UniCB_ModeLogin.Text;
 
 
              Sql.Clear;
@@ -167,7 +162,7 @@ begin
 
              ModalResult := mrOk;
 
-             if UniApplication.Parameters.Values['mode'] <> 'publik' then
+             if UniCB_ModeLogin.Text <> 'publik' then
              begin
                UniMainModule.UniSweetAlert.Title := UniCB_ModeLogin.Text;
                UniMainModule.UniSweetAlert.AlertType := atSuccess;
@@ -247,7 +242,7 @@ begin
     UniLabel_TitleAppS.Caption := TitleAppS;
     UniLabel_Powered.Caption := PoweredBy;
     UniLabel_LoginHello.Caption := TitleLogin;
-    UniLabel_TitleVersion.Caption := ApplicationName + TitleVersion;
+    UniLabel_TitleVersion.Caption := TitleVersion;
   end;
 
   // List Mode Login

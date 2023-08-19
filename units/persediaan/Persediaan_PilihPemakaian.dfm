@@ -9,6 +9,10 @@ object ufrmPersediaanPilihPemakaian: TufrmPersediaanPilihPemakaian
   OldCreateOrder = False
   OnClose = UniFormClose
   MonitoredKeys.Keys = <>
+  ScreenMask.Enabled = True
+  ScreenMask.WaitData = True
+  ScreenMask.Message = 'Memuat Data . . .'
+  ScreenMask.Target = UniPanel1
   PixelsPerInch = 96
   TextHeight = 13
   object UniPanel1: TUniPanel
@@ -246,9 +250,6 @@ object ufrmPersediaanPilihPemakaian: TufrmPersediaanPilihPemakaian
       Align = alTop
       TabOrder = 3
       OnClick = btRefreshClick
-      ExplicitLeft = 472
-      ExplicitTop = 16
-      ExplicitWidth = 75
     end
   end
   object qPilihPemakaian: TFDQuery
@@ -257,43 +258,41 @@ object ufrmPersediaanPilihPemakaian: TufrmPersediaanPilihPemakaian
       
         'SELECT        A.tahun, D.kode AS kode_unit, E.Nama_Subunit, E.Ke' +
         'terangan, A.sumber, D.bidang, A.program_kegiatan, A.kode_ssh, B.' +
-        'nama, B.satuan, B.spek, SUM(A.a_qty) + SUM(A.d_qty) - SUM(A.k_qt' +
-        'y) AS tersedia, '
-      'AVG(A.harga_satuan) AS harga_satuan'
+        'nama, B.satuan, B.spek, '
       
-        'FROM            (SELECT        tahun, kode_ssh, kode_unitkerja, ' +
-        'qty AS a_qty, 0 AS d_qty, 0 AS k_qty, harga_satuan, supplier AS ' +
-        'sumber, program_kegiatan'
+        '  CONVERT(FLOAT, SUM(A.a_qty) + SUM(A.d_qty) - SUM(A.k_qty)) AS ' +
+        'tersedia, '
+      '  AVG(A.harga_satuan) AS harga_satuan'
+      'FROM ('
       
-        '                          FROM            db_persediaan.dbo.data' +
-        '_saldo'
+        '                          SELECT tahun, kode_ssh, kode_unitkerja' +
+        ', qty AS a_qty, 0 AS d_qty, 0 AS k_qty, harga_satuan, '#39'SaldoAwal' +
+        #39' AS sumber, program_kegiatan'
+      '                          FROM db_persediaan.dbo.data_saldo'
       '                          UNION ALL'
       
-        '                          SELECT        DATEPART(YEAR, tanggal) ' +
-        'AS tahun, kode_ssh, kode_unitkerja, 0 AS a_qty, SUM(qty) AS d_qt' +
-        'y, 0 AS k_qty, AVG(harga_satuan) AS harga_satuan, '#39'Pembelian'#39' AS' +
-        ' sumber, program_kegiatan'
-      
-        '                          FROM            db_persediaan.dbo.data' +
-        '_pembelian'
+        '                          SELECT DATEPART(YEAR, tanggal) AS tahu' +
+        'n, kode_ssh, kode_unitkerja, 0 AS a_qty, SUM(qty) AS d_qty, 0 AS' +
+        ' k_qty, AVG(harga_satuan) AS harga_satuan, '#39'Pembelian'#39' AS sumber' +
+        ', program_kegiatan'
+      '                          FROM db_persediaan.dbo.data_pembelian'
       
         '                          GROUP BY DATEPART(YEAR, tanggal), kode' +
-        '_ssh, kode_unitkerja, program_kegiatan'
+        '_ssh, kode_unitkerja, program_kegiatan, harga_satuan'
       '                          UNION ALL'
       
-        '                          SELECT        DATEPART(YEAR, tanggal) ' +
-        'AS tahun, kode_ssh, kode_unitkerja, 0 AS a_qty, 0 AS d_qty, SUM(' +
-        'qty) AS k_qty, AVG(harga_satuan) AS harga_satuan, sumber, progra' +
-        'm_kegiatan'
-      
-        '                          FROM            db_persediaan.dbo.data' +
-        '_pemakaian'
+        '                          SELECT DATEPART(YEAR, tanggal) AS tahu' +
+        'n, kode_ssh, kode_unitkerja, 0 AS a_qty, 0 AS d_qty, SUM(qty) AS' +
+        ' k_qty, AVG(harga_satuan) AS harga_satuan, sumber, program_kegia' +
+        'tan'
+      '                          FROM db_persediaan.dbo.data_pemakaian'
       
         '                          GROUP BY DATEPART(YEAR, tanggal), kode' +
-        '_ssh, kode_unitkerja, program_kegiatan, sumber) AS A INNER JOIN'
+        '_ssh, kode_unitkerja, program_kegiatan, harga_satuan, sumber'
+      '  ) AS A INNER JOIN'
       
-        '                         db_persediaan.dbo.data_ssh AS B ON A.ta' +
-        'hun = B.tahun AND A.kode_ssh = B.kode INNER JOIN'
+        '                         db_persediaan.dbo.vw_data_ssh AS B ON A' +
+        '.tahun = B.tahun AND A.kode_ssh = B.kode INNER JOIN'
       
         '                         db_persediaan.dbo.data_unitkerja AS D O' +
         'N A.kode_unitkerja = D.id INNER JOIN'
@@ -309,9 +308,9 @@ object ufrmPersediaanPilihPemakaian: TufrmPersediaanPilihPemakaian
         'E :satuan AND A.sumber LIKE :sumber AND B.spek LIKE :spek'
       ''
       
-        'GROUP BY A.tahun, A.sumber, A.kode_ssh, A.program_kegiatan, B.na' +
-        'ma, B.satuan, B.spek, D.bidang, B.tahun, E.Nama_Subunit, E.Keter' +
-        'angan, D.kode'
+        'GROUP BY A.tahun, A.sumber, A.kode_ssh, A.program_kegiatan, A.ha' +
+        'rga_satuan, B.nama, B.satuan, B.spek, D.bidang, B.tahun, E.Nama_' +
+        'Subunit, E.Keterangan, D.kode'
       ''
       'ORDER BY sumber DESC, bidang, program_kegiatan, tersedia DESC')
     Left = 440
@@ -422,14 +421,14 @@ object ufrmPersediaanPilihPemakaian: TufrmPersediaanPilihPemakaian
       ReadOnly = True
       Size = 100
     end
-    object qPilihPemakaiantersedia: TIntegerField
-      FieldName = 'tersedia'
-      Origin = 'tersedia'
-      ReadOnly = True
-    end
     object qPilihPemakaianharga_satuan: TCurrencyField
       FieldName = 'harga_satuan'
       Origin = 'harga_satuan'
+      ReadOnly = True
+    end
+    object qPilihPemakaiantersedia: TFloatField
+      FieldName = 'tersedia'
+      Origin = 'tersedia'
       ReadOnly = True
     end
   end

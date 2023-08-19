@@ -9,6 +9,10 @@ object frmPersediaanPembelian: TfrmPersediaanPembelian
   OldCreateOrder = False
   OnClose = UniFormClose
   MonitoredKeys.Keys = <>
+  ScreenMask.Enabled = True
+  ScreenMask.WaitData = True
+  ScreenMask.Message = 'Memuat Data . . .'
+  ScreenMask.Target = UniPanel1
   PixelsPerInch = 96
   TextHeight = 13
   object UniPanel1: TUniPanel
@@ -93,7 +97,7 @@ object frmPersediaanPembelian: TfrmPersediaanPembelian
         Align = alTop
         TabOrder = 6
         Caption = 'upTombol'
-        object dbnSSH: TUniDBNavigator
+        object dbnTombol: TUniDBNavigator
           Left = 1
           Top = 1
           Width = 608
@@ -308,6 +312,10 @@ object frmPersediaanPembelian: TfrmPersediaanPembelian
           Caption = 'Status Pagu'
           ParentFont = False
           TabOrder = 9
+          ScreenMask.Enabled = True
+          ScreenMask.WaitData = True
+          ScreenMask.Target = UniPanel1
+          OnClick = ubStatusPaguClick
         end
         object cbKodeBAST: TUniComboBox
           Left = 17
@@ -382,7 +390,7 @@ object frmPersediaanPembelian: TfrmPersediaanPembelian
             ShowToolTip = True
             FieldName = 'supplier'
             Title.Alignment = taCenter
-            Title.Caption = 'Supplier'
+            Title.Caption = 'Kode Rek'
             Title.Font.Style = [fsBold]
             Width = 155
           end
@@ -579,11 +587,6 @@ object frmPersediaanPembelian: TfrmPersediaanPembelian
       Required = True
       Size = 30
     end
-    object qPembelianqty: TIntegerField
-      FieldName = 'qty'
-      Origin = 'qty'
-      Required = True
-    end
     object qPembelianharga_satuan: TCurrencyField
       FieldName = 'harga_satuan'
       Origin = 'harga_satuan'
@@ -670,6 +673,11 @@ object frmPersediaanPembelian: TfrmPersediaanPembelian
     object qPembeliankode_skpd: TIntegerField
       FieldName = 'kode_skpd'
       Origin = 'kode_skpd'
+      Required = True
+    end
+    object qPembelianqty: TFloatField
+      FieldName = 'qty'
+      Origin = 'qty'
       Required = True
     end
   end
@@ -904,11 +912,6 @@ object frmPersediaanPembelian: TfrmPersediaanPembelian
       Required = True
       Size = 30
     end
-    object qPemakaianqty: TIntegerField
-      FieldName = 'qty'
-      Origin = 'qty'
-      Required = True
-    end
     object qPemakaianharga_satuan: TCurrencyField
       FieldName = 'harga_satuan'
       Origin = 'harga_satuan'
@@ -950,9 +953,6 @@ object frmPersediaanPembelian: TfrmPersediaanPembelian
       Required = True
       Size = 50
     end
-    object qPemakaiantersedia: TIntegerField
-      FieldName = 'tersedia'
-    end
     object qPemakaiansumber: TStringField
       FieldName = 'sumber'
       Origin = 'sumber'
@@ -962,6 +962,16 @@ object frmPersediaanPembelian: TfrmPersediaanPembelian
     object qPemakaiankode_skpd: TIntegerField
       FieldName = 'kode_skpd'
       Origin = 'kode_skpd'
+      Required = True
+    end
+    object qPemakaianqty: TFloatField
+      FieldName = 'qty'
+      Origin = 'qty'
+      Required = True
+    end
+    object qPemakaiantersedia: TFloatField
+      FieldName = 'tersedia'
+      Origin = 'tersedia'
       Required = True
     end
   end
@@ -976,6 +986,8 @@ object frmPersediaanPembelian: TfrmPersediaanPembelian
       'AS new_bast'
       'FROM'
       '(SELECT kode_bast FROM db_persediaan.dbo.data_pembelian'
+      'WHERE CONVERT(VARCHAR(4),(DATEPART(YEAR,tanggal))) =:tahun'
+      'AND kode_skpd =:kode_skpd'
       'UNION ALL'
       'SELECT '#39'000/BAST-BARU/SKPD/TAHUN'#39' AS kode_bast) AS TBL'
       'ORDER BY kode_bast DESC')
@@ -993,6 +1005,11 @@ object frmPersediaanPembelian: TfrmPersediaanPembelian
         DataType = ftString
         ParamType = ptInput
         Value = 'TAHUN'
+      end
+      item
+        Name = 'KODE_SKPD'
+        DataType = ftInteger
+        ParamType = ptInput
       end>
     object qBASTPenerimaannew_bast: TStringField
       FieldName = 'new_bast'
@@ -1012,6 +1029,8 @@ object frmPersediaanPembelian: TfrmPersediaanPembelian
       'AS new_bast'
       'FROM'
       '(SELECT kode_bast FROM db_persediaan.dbo.data_pemakaian'
+      'WHERE CONVERT(VARCHAR(4),(DATEPART(YEAR,tanggal))) =:tahun'
+      'AND kode_skpd =:kode_skpd'
       'UNION ALL'
       'SELECT '#39'000'#39' +'
       #39'/BAST-KELUAR/'#39' + :skpd + '#39'/'#39' + :tahun'
@@ -1031,6 +1050,11 @@ object frmPersediaanPembelian: TfrmPersediaanPembelian
         DataType = ftString
         ParamType = ptInput
         Value = 'TAHUN'
+      end
+      item
+        Name = 'KODE_SKPD'
+        DataType = ftInteger
+        ParamType = ptInput
       end>
     object qBASTPengeluarannew_bast: TStringField
       FieldName = 'new_bast'
@@ -1042,10 +1066,9 @@ object frmPersediaanPembelian: TfrmPersediaanPembelian
   object qSSH: TFDQuery
     Connection = UniMainModule.FDConnection
     SQL.Strings = (
-      'SELECT * FROM db_persediaan.dbo.data_ssh'
+      'SELECT * FROM db_persediaan.dbo.vw_data_ssh'
       'WHERE'
       'tahun =:tahun AND '
-      'kode LIKE '#39'1.1.7.%'#39' AND'
       'kode LIKE :kode AND'
       'nama_kel LIKE :nama_kel  AND'
       'nama LIKE :nama AND'

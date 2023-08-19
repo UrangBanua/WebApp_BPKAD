@@ -53,9 +53,6 @@ type
     qStokBarangnama: TStringField;
     qStokBarangsatuan: TStringField;
     qStokBarangspek: TStringField;
-    qStokBarangpenerimaan: TIntegerField;
-    qStokBarangpengeluaran: TIntegerField;
-    qStokBarangtersedia: TIntegerField;
     qStokBarangharga_satuan: TCurrencyField;
     qUnitkerjaid: TFDAutoIncField;
     qUnitkerjanama_subunit: TStringField;
@@ -63,6 +60,9 @@ type
     qUnitkerjabidang: TStringField;
     ubsPersediaan: TUniBarSeries;
     ubsPengeluaran: TUniBarSeries;
+    qStokBarangpenerimaan: TFloatField;
+    qStokBarangpengeluaran: TFloatField;
+    qStokBarangtersedia: TFloatField;
     procedure unfStokBarangClick(Sender: TObject);
     procedure unfPembelianClick(Sender: TObject);
     procedure unfPemakaianClick(Sender: TObject);
@@ -205,7 +205,7 @@ begin
   //frmPersediaanLaporanUrl.ShowModal;
 
   // Open Cetak Transaksi Terima & Keluar
-  UniSession.AddJS('window.open('+'''https://laporan:Bpkad123@bpkad.hulusungaitengahkab.go.id:446/'+
+  UniSession.AddJS('window.open('+'''https://laporan:bpkad.123@bpkad.hulusungaitengahkab.go.id:444/'+
                    'ReportServer/Pages/ReportViewer.aspx?%2fReports_Persediaan%2fLaporan_Transaksi&rc:Parameters=Collapsed'+
                    '&tahun='+IntToStr(UniMainModule.TahunPersediaan)+
                    '&kode_skpd='+UniMainModule.qProfileKode_Subunit.Value+
@@ -217,8 +217,8 @@ end;
 procedure TfrmAppsPersediaan.ubtPersediaanClick(Sender: TObject);
 begin
   // Open Cetak Persediaan
-  UniSession.AddJS('window.open('+'''https://laporan:Bpkad123@bpkad.hulusungaitengahkab.go.id:446/'+
-                   'ReportServer/Pages/ReportViewer.aspx?%2fReports_Persediaan%2fLaporan_Persediaan&rc:Parameters=Collapsed'+
+  UniSession.AddJS('window.open('+'''https://laporan:bpkad.123@bpkad.hulusungaitengahkab.go.id:444/'+
+                   'ReportServer/Pages/ReportViewer.aspx?%2fReports_Persediaan%2fLaporan_Mutasi_Persediaan&rc:Parameters=Collapsed'+
                    '&tahun='+IntToStr(UniMainModule.TahunPersediaan)+
                    '&kode_skpd='+UniMainModule.qProfileKode_Subunit.Value+
                    '&bidang='+'%%'+
@@ -229,9 +229,9 @@ end;
 procedure TfrmAppsPersediaan.ubtSaldoClick(Sender: TObject);
 begin
   // Open Cetak Saldo Awal & Akhir
-  UniSession.AddJS('window.open('+'''https://laporan:Bpkad123@bpkad.hulusungaitengahkab.go.id:446/'+
-                   'ReportServer/Pages/ReportViewer.aspx?%2fReports_Persediaan%2fLaporan_Mutasi_SKPD&rc:Parameters=Collapsed'+
-                   '&Tahun='+IntToStr(UniMainModule.TahunPersediaan)+
+  UniSession.AddJS('window.open('+'''https://laporan:bpkad.123@bpkad.hulusungaitengahkab.go.id:444/'+
+                   'ReportServer/Pages/ReportViewer.aspx?%2fReports_Persediaan%2fLaporan_Stockopname_Persediaan&rc:'+
+                   'Tahun='+IntToStr(UniMainModule.TahunPersediaan)+
                    '&Kode_SKPD='+UniMainModule.qProfileKode_Subunit.Value+
                    '&Bidang='+'%%'+
                    ''', ''_blank'', ''toolbar=no,location=no,status=yes,menubar=no,directories=no,scrollbars=yes,resizable=yes,width=1150,height=650'');'); // to open a new window/tab﻿

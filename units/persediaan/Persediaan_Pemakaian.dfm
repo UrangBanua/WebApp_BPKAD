@@ -9,6 +9,10 @@ object frmPersediaanPemakaian: TfrmPersediaanPemakaian
   OldCreateOrder = False
   OnClose = UniFormClose
   MonitoredKeys.Keys = <>
+  ScreenMask.Enabled = True
+  ScreenMask.WaitData = True
+  ScreenMask.Message = 'Memuat Data . . .'
+  ScreenMask.Target = UniPanel1
   PixelsPerInch = 96
   TextHeight = 13
   object UniPanel1: TUniPanel
@@ -422,7 +426,7 @@ object frmPersediaanPemakaian: TfrmPersediaanPemakaian
         Align = alTop
         TabOrder = 6
         Caption = 'upTombol'
-        object dbnSSH: TUniDBNavigator
+        object dbnTombol: TUniDBNavigator
           Left = 1
           Top = 1
           Width = 608
@@ -552,11 +556,6 @@ object frmPersediaanPemakaian: TfrmPersediaanPemakaian
       Required = True
       Size = 30
     end
-    object qPemakaianqty: TIntegerField
-      FieldName = 'qty'
-      Origin = 'qty'
-      Required = True
-    end
     object qPemakaianharga_satuan: TCurrencyField
       FieldName = 'harga_satuan'
       Origin = 'harga_satuan'
@@ -602,9 +601,6 @@ object frmPersediaanPemakaian: TfrmPersediaanPemakaian
       LookupCache = True
       Lookup = True
     end
-    object qPemakaiantersedia: TIntegerField
-      FieldName = 'tersedia'
-    end
     object qPemakaiansatuan: TStringField
       FieldKind = fkLookup
       FieldName = 'satuan'
@@ -643,6 +639,16 @@ object frmPersediaanPemakaian: TfrmPersediaanPemakaian
     object qPemakaiankode_skpd: TIntegerField
       FieldName = 'kode_skpd'
       Origin = 'kode_skpd'
+      Required = True
+    end
+    object qPemakaianqty: TFloatField
+      FieldName = 'qty'
+      Origin = 'qty'
+      Required = True
+    end
+    object qPemakaiantersedia: TFloatField
+      FieldName = 'tersedia'
+      Origin = 'tersedia'
       Required = True
     end
   end
@@ -732,10 +738,9 @@ object frmPersediaanPemakaian: TfrmPersediaanPemakaian
   object qSSH: TFDQuery
     Connection = UniMainModule.FDConnection
     SQL.Strings = (
-      'SELECT * FROM db_persediaan.dbo.data_ssh'
+      'SELECT * FROM db_persediaan.dbo.vw_data_ssh'
       'WHERE'
       'tahun =:tahun AND '
-      'kode LIKE '#39'1.1.7.%'#39' AND'
       'kode LIKE :kode AND'
       'nama_kel LIKE :nama_kel  AND'
       'nama LIKE :nama AND'
@@ -843,6 +848,8 @@ object frmPersediaanPemakaian: TfrmPersediaanPemakaian
       'AS new_bast'
       'FROM'
       '(SELECT kode_bast FROM db_persediaan.dbo.data_pemakaian'
+      'WHERE CONVERT(VARCHAR(4),(DATEPART(YEAR,tanggal))) =:tahun'
+      'AND kode_skpd =:kode_skpd'
       'UNION ALL'
       'SELECT '#39'000/BAST-BARU/SKPD/TAHUN'#39' AS kode_bast) AS TBL'
       'ORDER BY kode_bast DESC')
@@ -860,6 +867,11 @@ object frmPersediaanPemakaian: TfrmPersediaanPemakaian
         DataType = ftString
         ParamType = ptInput
         Value = 'TAHUN'
+      end
+      item
+        Name = 'KODE_SKPD'
+        DataType = ftInteger
+        ParamType = ptInput
       end>
     object qBASTPengeluarannew_bast: TStringField
       FieldName = 'new_bast'

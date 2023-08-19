@@ -9,6 +9,10 @@ object ufrmPersediaanPilihPembelian: TufrmPersediaanPilihPembelian
   OldCreateOrder = False
   OnClose = UniFormClose
   MonitoredKeys.Keys = <>
+  ScreenMask.Enabled = True
+  ScreenMask.WaitData = True
+  ScreenMask.Message = 'Memuat Data . . .'
+  ScreenMask.Target = UniPanel1
   PixelsPerInch = 96
   TextHeight = 13
   object UniPanel1: TUniPanel
@@ -23,8 +27,6 @@ object ufrmPersediaanPilihPembelian: TufrmPersediaanPilihPembelian
     TitleAlign = taCenter
     Title = 'Pilih Barang yang Tersedia'
     Caption = 'UniPanel1'
-    ExplicitWidth = 942
-    ExplicitHeight = 349
     object dbgSSH: TUniDBGrid
       Left = 1
       Top = 1
@@ -190,10 +192,9 @@ object ufrmPersediaanPilihPembelian: TufrmPersediaanPilihPembelian
   object qPilihPembelian: TFDQuery
     Connection = UniMainModule.FDConnection
     SQL.Strings = (
-      'SELECT * FROM db_persediaan.dbo.data_ssh'
+      'SELECT * FROM db_persediaan.dbo.vw_data_ssh'
       'WHERE'
       'tahun =:tahun AND '
-      'kode LIKE '#39'1.1.7.%'#39' AND'
       'kode LIKE :kode AND'
       'nama_kel LIKE :nama_kel  AND'
       'nama LIKE :nama AND'

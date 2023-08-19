@@ -24,7 +24,6 @@ type
     qPilihPemakaiansatuan: TStringField;
     qPilihPemakaianspek: TStringField;
     qPilihPemakaiansumber: TStringField;
-    qPilihPemakaiantersedia: TIntegerField;
     qPilihPemakaianharga_satuan: TCurrencyField;
     UniPanel1: TUniPanel;
     udbgPilihPemakaian: TUniDBGrid;
@@ -38,6 +37,7 @@ type
     feProgram: TUniEdit;
     feBidang: TUniEdit;
     btRefresh: TUniBitBtn;
+    qPilihPemakaiantersedia: TFloatField;
     procedure udbgPilihPemakaianColumnFilter(Sender: TUniDBGrid;
       const Column: TUniDBGridColumn; const Value: Variant);
     procedure udbgPilihPemakaianClearFilters(Sender: TObject);

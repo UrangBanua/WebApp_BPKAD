@@ -37,11 +37,11 @@ object frmKepegaiwaian: TfrmKepegaiwaian
       ClientEvents.ExtEvents.Strings = (
         
           'click=function click(sender, e, eOpts)'#13#10'{'#13#10'  window.open("https:' +
-          '//laporan:Bpkad123@bpkad.hulusungaitengahkab.go.id:446/ReportSer' +
-          'ver/Pages/ReportViewer.aspx?%2fReports_Absensi%2f_Summary_Rekap_' +
-          'Absensi_Periode_v2&rs:Command=Render", "_blank", "toolbar=no,loc' +
-          'ation=no,status=yes,menubar=no,directories=no,scrollbars=yes,res' +
-          'izable=yes,width=950,height=650");'#65279#13#10'}')
+          '//laporan:bpkad.123@bpkad.hulusungaitengahkab.go.id:444/ReportSe' +
+          'rver/Pages/ReportViewer.aspx?%2fReports_Absensi%2f_Summary_Rekap' +
+          '_Absensi_Periode_v2&rs:Command=Render", "_blank", "toolbar=no,lo' +
+          'cation=no,status=yes,menubar=no,directories=no,scrollbars=yes,re' +
+          'sizable=yes,width=950,height=650");'#65279#13#10'}')
       Images = UniMainModule.imgButton
       ImageIndex = 2
       OnClick = unfRekapAbsenClick
@@ -67,7 +67,7 @@ object frmKepegaiwaian: TfrmKepegaiwaian
       ClientEvents.ExtEvents.Strings = (
         
           'click=function click(sender, e, eOpts)'#13#10'{'#13#10'   window.open("https' +
-          '://laporan:Bpkad123@bpkad.hulusungaitengahkab.go.id:446/ReportSe' +
+          '://laporan:bpkad123@bpkad.hulusungaitengahkab.go.id:444/ReportSe' +
           'rver/Pages/ReportViewer.aspx?%2fReports_Absensi%2f_Rekap_Absensi' +
           '_Periode_v2&rs:Command=Render", "_blank", "toolbar=no,location=n' +
           'o,status=yes,menubar=no,directories=no,scrollbars=yes,resizable=' +
@@ -76,7 +76,7 @@ object frmKepegaiwaian: TfrmKepegaiwaian
       ImageIndex = 3
       OnClick = unfDetailAbsenClick
     end
-    object unfRoster: TUniFSButton
+    object unfLembur: TUniFSButton
       Left = 64
       Top = 167
       Width = 241
@@ -88,12 +88,20 @@ object frmKepegaiwaian: TfrmKepegaiwaian
       BadgeText.TextSize = 10
       BadgeText.TextStyle = 'bold'
       BadgeText.BackgroundColor = '#D50000'
-      Caption = 'Roster / Jam Kerja'
+      Caption = 'Rekap Lembur'
       ParentFont = False
       Font.Color = clBlack
       Font.Height = -15
       Font.Name = 'Roboto'
       TabOrder = 3
+      ClientEvents.ExtEvents.Strings = (
+        
+          'click=function click(sender, e, eOpts)'#13#10'{'#13#10'  window.open("https:' +
+          '//laporan:bpkad.123@bpkad.hulusungaitengahkab.go.id:444/ReportSe' +
+          'rver/Pages/ReportViewer.aspx?%2fReports_Absensi%2f_Summary_Rekap' +
+          '_Lembur_Periode_v2&rs:Command=Render", "_blank", "toolbar=no,loc' +
+          'ation=no,status=yes,menubar=no,directories=no,scrollbars=yes,res' +
+          'izable=yes,width=950,height=650");'#65279#13#10'}')
       Images = UniMainModule.imgButton
       ImageIndex = 1
     end
@@ -118,11 +126,11 @@ object frmKepegaiwaian: TfrmKepegaiwaian
       ClientEvents.ExtEvents.Strings = (
         
           'click=function click(sender, e, eOpts)'#13#10'{'#13#10'   window.open("https' +
-          '://laporan:Bpkad123@bpkad.hulusungaitengahkab.go.id:446/ReportSe' +
-          'rver/Pages/ReportViewer.aspx?%2fReports_Absensi%2f_Data_Pegawai&' +
-          'rs:Command=Render", "_blank", "toolbar=no,location=no,status=yes' +
-          ',menubar=no,directories=no,scrollbars=yes,resizable=yes,width=95' +
-          '0,height=650");'#65279#13#10'}')
+          '://laporan:bpkad.123@bpkad.hulusungaitengahkab.go.id:444/ReportS' +
+          'erver/Pages/ReportViewer.aspx?%2fReports_Absensi%2f_Data_Pegawai' +
+          '&rs:Command=Render", "_blank", "toolbar=no,location=no,status=ye' +
+          's,menubar=no,directories=no,scrollbars=yes,resizable=yes,width=9' +
+          '50,height=650");'#65279#13#10'}')
       Images = UniMainModule.imgButton
       ImageIndex = 0
       OnClick = unfKepegaiwaianClick

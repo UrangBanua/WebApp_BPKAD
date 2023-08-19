@@ -665,7 +665,7 @@ object UniServerModule: TUniServerModule
   SSL.SSLOptions.VerifyMode = []
   SSL.SSLOptions.VerifyDepth = 0
   SSL.SSLPort = 443
-  Options = [soAutoPlatformSwitch, soRestartSessionOnTimeout, soWipeShadowSessions, soDontCompressDownloads]
+  Options = [soAutoPlatformSwitch, soRestartSessionOnTimeout, soAllowSessionRecording, soWipeShadowSessions, soLogSessionTerminate, soDontCompressDownloads]
   ExOptions.XFrameOptions = uxoSameOrigin
   ConnectionFailureRecovery.ErrorMessage = 'Connection Error'
   ConnectionFailureRecovery.RetryMessage = 'Retrying...'

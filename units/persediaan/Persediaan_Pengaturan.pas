@@ -85,7 +85,6 @@ type
     qSALDOkode_unitkerja: TIntegerField;
     qSALDOprogram_kegiatan: TStringField;
     qSALDOkode_ssh: TStringField;
-    qSALDOqty: TIntegerField;
     qSALDOharga_satuan: TCurrencyField;
     qSALDOsupplier: TStringField;
     qSALDOmodified_at: TSQLTimeStampField;
@@ -109,6 +108,8 @@ type
     qSALDOtotal: TCurrencyField;
     qSALDOtahun: TIntegerField;
     qSALDOkode_skpd: TIntegerField;
+    qSSHTahun: TIntegerField;
+    qSALDOqty: TFloatField;
     procedure UniFormShow(Sender: TObject);
     procedure UniFormClose(Sender: TObject; var Action: TCloseAction);
     procedure dbgSSHColumnFilter(Sender: TUniDBGrid;
@@ -427,6 +428,7 @@ procedure TfrmPersediaanPengaturan.qSALDOBeforePost(DataSet: TDataSet);
 begin
   if (qSALDO.State = dsInsert) or (qSALDO.State = dsEdit) then
   begin
+    qSALDOTahun.Value := UniMainModule.TahunPersediaan;
     qSALDOModified_at.AsDateTime := Now;
     qSALDOkode_skpd.Value := UniMainModule.UserKodeSKPD;
     qSALDOModified_user.Value := UniMainmodule.UserId;
@@ -467,6 +469,7 @@ end;
 procedure TfrmPersediaanPengaturan.qSSHAfterPost(DataSet: TDataSet);
 begin
   UniMainModule.NotifSaveDB('Data SSH',0);
+  qSSH.Refresh;
 end;
 
 procedure TfrmPersediaanPengaturan.qSSHBeforePost(DataSet: TDataSet);

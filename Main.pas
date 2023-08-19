@@ -211,7 +211,6 @@ begin
                                      UniMainmodule.UserOS + ',Mode:' +
                                      UniMainModule.UserMode + ']';
 
-
   UniMainModule.qProfile.ParamByName('id').Value := UniMainModule.UserKodeSKPD;
   if not UniMainModule.qProfile.Active then
   UniMainModule.qProfile.Open;
@@ -302,6 +301,8 @@ begin
 end;
 
 procedure TMainForm.UniTreeSettingMenuClick(Sender: TObject);
+var
+  FClassName : string;
 begin
   if UniTreeSettingMenu.Selected.Enabled then
   begin
@@ -313,15 +314,11 @@ begin
             if Button = Yes then
             begin
                 try
-                  Sleep(2000)
+                  Sleep(2000);
                 finally
+                  UniSession.Logout;
                   //UniApplication.Destroy;
                   //close;
-                  //UniSession.Logout;
-                  if UniMainModule.UserMode = 'publik' then
-                    UniSession.UrlRedirect(UniSession.URL)
-                  else
-                    UniSession.Logout
                 end;
             end;
             if Button = No then
@@ -331,12 +328,15 @@ begin
      end
     else if UniTreeSettingMenu.Selected.Text='User Setting' then
      begin
-      UniMainModule.UniFSToast.Info('!!!','Modul belum tersedia');
+      //UniMainModule.UniFSToast.Info('!!!','Modul dalam versi beta');
+      FClassName := 'TfrmSetting';
      end
     else if UniTreeSettingMenu.Selected.Text='Help' then
      begin
       UniMainModule.UniFSToast.Info('!!!','Maaf modul belum tersedia');
      end;
+
+     OpenFrame(FClassName, UniTreeSettingMenu.Selected.Text);
   end;
 end;
 
